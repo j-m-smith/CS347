@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2390F11B-6CE8-7679-5625-E8C8E0B56768" name="dept">
+<createdBy>Justin</createdBy>
+<createdTime>2015-02-12 16:00:27 UTC</createdTime>
+<generatorID>8F9DCB64-C960-613E-DC36-340C6476CB4A</generatorID>
+<ownerDesignName>SIM_Logical</ownerDesignName>
+<abbreviation>department</abbreviation>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="dept_id" id="20BD4A31-EAAC-2DFB-D060-489D70FBCD0A">
+<createdBy>Justin</createdBy>
+<createdTime>2015-02-12 16:00:27 UTC</createdTime>
+<generatorID>858BECE2-CBD7-161D-A429-4D7A43A5FBB0</generatorID>
+<ownerDesignName>SIM_Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="9BC35E40-282B-E8E3-6841-BDA4B6006AAE">
+<createdBy>Justin</createdBy>
+<createdTime>2015-02-12 16:00:27 UTC</createdTime>
+<generatorID>68A68473-DC3D-1D39-5478-B3A262B29322</generatorID>
+<ownerDesignName>SIM_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="location" id="DB1FB290-9692-F035-9532-7059292C4EFD">
+<createdBy>Justin</createdBy>
+<createdTime>2015-02-12 16:00:27 UTC</createdTime>
+<generatorID>26581FED-9360-1855-D8D8-058EE2532A2F</generatorID>
+<ownerDesignName>SIM_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="emp_id" id="E05D1520-9DB5-7D42-88F1-80B14DD1EDAD">
+<createdBy>Justin</createdBy>
+<createdTime>2015-02-12 16:00:27 UTC</createdTime>
+<generatorID>61615C48-7188-D59A-C34B-1A2132F6E1C3</generatorID>
+<ownerDesignName>SIM_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3DC7F0DD-9849-A544-EA8A-7B0C9A72AABA" name="dept_PK">
+<createdBy>Justin</createdBy>
+<createdTime>2015-02-12 16:00:27 UTC</createdTime>
+<generatorID>5F641F71-B259-C4FA-B7B3-45B0A3EE608C</generatorID>
+<ownerDesignName>SIM_Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="20BD4A31-EAAC-2DFB-D060-489D70FBCD0A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EF4D9750-D1F0-6B1A-295F-5DDAEC2FD06B" name="dept__IDX">
+<createdBy>Justin</createdBy>
+<createdTime>2015-02-12 16:00:27 UTC</createdTime>
+<ownerDesignName>SIM_Logical</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>8C02E397-1BBE-FA19-5A9A-7597A5AEC8EC</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="E05D1520-9DB5-7D42-88F1-80B14DD1EDAD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F09D24CC-D6D7-C69E-EEC9-CB470755ABA7" name="dept_magr_FK">
+<createdBy>Justin</createdBy>
+<createdTime>2015-02-12 16:03:56 UTC</createdTime>
+<generatorID>8C02E397-1BBE-FA19-5A9A-7597A5AEC8EC</generatorID>
+<ownerDesignName>SIM_Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>

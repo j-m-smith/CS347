@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="27640CAD-0C7F-9CC3-9D73-CA6A4B610EEB" name="r4">
+<createdBy>Justin</createdBy>
+<createdTime>2015-02-12 16:03:56 UTC</createdTime>
+<ownerDesignName>SIM_Logical</ownerDesignName>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="project_emp_Person_person_id" id="E3E31DFA-397D-05B3-710B-1A6F26BEB3AC">
+<createdBy>Justin</createdBy>
+<createdTime>2015-02-12 16:03:56 UTC</createdTime>
+<ownerDesignName>SIM_Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>B5C5699C-7022-156A-CECC-19DF1A98DC7D</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="08DDC042-1E32-FBC3-A9B8-2830D1E5BA17" referredColumn="B5C5699C-7022-156A-CECC-19DF1A98DC7D"/>
+</associations>
+</Column>
+<Column name="project_project_id" id="B0503159-F16F-B5B3-503E-37A5B507DA33">
+<createdBy>Justin</createdBy>
+<createdTime>2015-02-12 16:03:56 UTC</createdTime>
+<ownerDesignName>SIM_Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>DC46419F-9F72-FFFC-C335-2AAD7EA9D6C4</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F890971B-430F-B574-1FA5-840BE717DDE8" referredColumn="DC46419F-9F72-FFFC-C335-2AAD7EA9D6C4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4EC6CAD5-CCA6-F8AD-560E-9BA690DC8592" name="r4_PK">
+<createdBy>Justin</createdBy>
+<createdTime>2015-02-12 16:03:56 UTC</createdTime>
+<ownerDesignName>SIM_Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E3E31DFA-397D-05B3-710B-1A6F26BEB3AC"/>
+<colUsage columnID="B0503159-F16F-B5B3-503E-37A5B507DA33"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D5F8E32C-2E6C-868A-1E4D-445E3BFFD4F0" name="FK_ASS_15">
+<createdBy>Justin</createdBy>
+<createdTime>2015-02-12 16:03:56 UTC</createdTime>
+<generatorID>D966BF10-7471-887A-4955-730BEB804613</generatorID>
+<ownerDesignName>SIM_Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E3E31DFA-397D-05B3-710B-1A6F26BEB3AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6B935942-0E4A-5FB4-5396-2A40316A225B" name="FK_ASS_16">
+<createdBy>Justin</createdBy>
+<createdTime>2015-02-12 16:03:56 UTC</createdTime>
+<generatorID>D966BF10-7471-887A-4955-730BEB804613</generatorID>
+<ownerDesignName>SIM_Logical</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0503159-F16F-B5B3-503E-37A5B507DA33"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

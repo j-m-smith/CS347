@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="685B4820-6572-66B9-7F8E-08F6813CD2F2" name="P">
+<createdBy>Justin</createdBy>
+<createdTime>2015-02-12 16:03:56 UTC</createdTime>
+<generatorID>151B437E-E1B3-B120-4A28-F85797C0A6AF</generatorID>
+<ownerDesignName>SIM_Logical</ownerDesignName>
+<abbreviation>Person</abbreviation>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Person_person_id" id="F675E4FA-195D-36F1-02B0-8B043D462F3E">
+<createdBy>Justin</createdBy>
+<createdTime>2015-02-12 16:03:56 UTC</createdTime>
+<generatorID>08A2FA8A-1463-2A6A-D4CE-846B57FA1EC5</generatorID>
+<ownerDesignName>SIM_Logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Person_name" id="A9A9561E-CB53-4AF2-6F7C-4DC0DD67CF38">
+<createdBy>Justin</createdBy>
+<createdTime>2015-02-12 16:03:56 UTC</createdTime>
+<generatorID>7CD438BF-779E-66FC-F93D-F7B6A6EC0027</generatorID>
+<ownerDesignName>SIM_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Person_ssnum" id="82CDA2C2-E656-7636-82B5-C819E2599F7B">
+<createdBy>Justin</createdBy>
+<createdTime>2015-02-12 16:03:56 UTC</createdTime>
+<generatorID>6CEECCE8-2D73-3776-DDFE-F0F9F5635D22</generatorID>
+<ownerDesignName>SIM_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Person_gender" id="345D9812-E2E6-7E22-38F2-E24E7AE6455D">
+<createdBy>Justin</createdBy>
+<createdTime>2015-02-12 16:03:56 UTC</createdTime>
+<generatorID>AF032419-2D60-05C0-4140-6602A1DC444A</generatorID>
+<ownerDesignName>SIM_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Person_birth_date" id="4001641C-7B3B-49D4-D6A5-ECCD7208E549">
+<createdBy>Justin</createdBy>
+<createdTime>2015-02-12 16:03:56 UTC</createdTime>
+<generatorID>0AA758CE-BC98-0F63-948B-50304BE419F2</generatorID>
+<ownerDesignName>SIM_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Person_address" id="7445F76B-003E-7764-6C27-ACC25C0422E4">
+<createdBy>Justin</createdBy>
+<createdTime>2015-02-12 16:03:56 UTC</createdTime>
+<generatorID>AC1D4BE0-2D7A-9B45-4EF3-6B094238F7D7</generatorID>
+<ownerDesignName>SIM_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Person_city" id="6A836294-CB37-EFA7-A358-90E96E6CAF31">
+<createdBy>Justin</createdBy>
+<createdTime>2015-02-12 16:03:56 UTC</createdTime>
+<generatorID>134DD86A-A6AC-4263-6268-DAC9D7989A04</generatorID>
+<ownerDesignName>SIM_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Person_state" id="E26FEABC-EC8A-DA76-73A5-CF1545CE124A">
+<createdBy>Justin</createdBy>
+<createdTime>2015-02-12 16:03:56 UTC</createdTime>
+<generatorID>3FB0E307-0937-F90D-7F9E-D97E8EA21E2C</generatorID>
+<ownerDesignName>SIM_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Person_zip" id="70992992-F762-C260-B9EB-3E2169EB11BC">
+<createdBy>Justin</createdBy>
+<createdTime>2015-02-12 16:03:56 UTC</createdTime>
+<generatorID>672BB911-6E6F-098A-E600-73FA332D7BF1</generatorID>
+<ownerDesignName>SIM_Logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="411D7EBD-00CD-4C55-B749-408B74E1C1AF" name="P_PK">
+<createdBy>Justin</createdBy>
+<createdTime>2015-02-12 16:03:56 UTC</createdTime>
+<generatorID>0C9CD2DF-D2F9-49D9-E254-FD8BFD36E708</generatorID>
+<ownerDesignName>SIM_Logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F675E4FA-195D-36F1-02B0-8B043D462F3E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
