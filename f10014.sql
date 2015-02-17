@@ -27,7 +27,7 @@ prompt APPLICATION 10014 - HW4
 -- Application Export:
 --   Application:     10014
 --   Name:            HW4
---   Date and Time:   02:51 Tuesday February 17, 2015
+--   Date and Time:   03:04 Tuesday February 17, 2015
 --   Exported By:     J.M.SMITH@UTEXAS.EDU
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -36,10 +36,10 @@ prompt APPLICATION 10014 - HW4
 --
 
 -- Application Statistics:
---   Pages:                      7
+--   Pages:                      8
 --     Items:                   34
 --     Processes:               11
---     Regions:                 13
+--     Regions:                 15
 --     Buttons:                 19
 --     Dynamic Actions:          8
 --   Shared Components:
@@ -108,7 +108,7 @@ wwv_flow_api.create_flow(
 ,p_rejoin_existing_sessions=>'N'
 ,p_csv_encoding=>'Y'
 ,p_last_updated_by=>'J.M.SMITH@UTEXAS.EDU'
-,p_last_upd_yyyymmddhh24miss=>'20150217024409'
+,p_last_upd_yyyymmddhh24miss=>'20150217030232'
 ,p_ui_type_name => null
 );
 end;
@@ -129,10 +129,27 @@ wwv_flow_api.create_list_item(
 ,p_list_item_current_for_pages=>'1'
 );
 wwv_flow_api.create_list_item(
+ p_id=>wwv_flow_api.id(574377747730666043)
+,p_list_item_display_sequence=>40
+,p_list_item_link_text=>'Department'
+,p_list_item_link_target=>'f?p=&APP_ID.:7:&SESSION.::&DEBUG.'
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'7,8'
+);
+wwv_flow_api.create_list_item(
+ p_id=>wwv_flow_api.id(576250481614207476)
+,p_list_item_display_sequence=>50
+,p_list_item_link_text=>'People'
+,p_list_item_link_target=>'f?p=&APP_ID.:9:&SESSION.::&DEBUG.'
+,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
+,p_list_item_current_for_pages=>'9'
+);
+wwv_flow_api.create_list_item(
  p_id=>wwv_flow_api.id(572677715151405659)
 ,p_list_item_display_sequence=>20
 ,p_list_item_link_text=>'Employees'
-,p_list_item_link_target=>'f?p=&APP_ID.:2:&SESSION.::&DEBUG.'
+,p_list_item_link_target=>'f?p=&APP_ID.:2:&SESSION.::&DEBUG.::::'
+,p_parent_list_item_id=>wwv_flow_api.id(576250481614207476)
 ,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
 ,p_list_item_current_for_pages=>'2'
 );
@@ -140,17 +157,10 @@ wwv_flow_api.create_list_item(
  p_id=>wwv_flow_api.id(574146068366629196)
 ,p_list_item_display_sequence=>30
 ,p_list_item_link_text=>'Manager'
-,p_list_item_link_target=>'f?p=&APP_ID.:5:&SESSION.::&DEBUG.'
+,p_list_item_link_target=>'f?p=&APP_ID.:5:&SESSION.::&DEBUG.::::'
+,p_parent_list_item_id=>wwv_flow_api.id(576250481614207476)
 ,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
 ,p_list_item_current_for_pages=>'5'
-);
-wwv_flow_api.create_list_item(
- p_id=>wwv_flow_api.id(574377747730666043)
-,p_list_item_display_sequence=>40
-,p_list_item_link_text=>'Department'
-,p_list_item_link_target=>'f?p=&APP_ID.:7:&SESSION.::&DEBUG.'
-,p_list_item_current_type=>'COLON_DELIMITED_PAGE_LIST'
-,p_list_item_current_for_pages=>'7,8'
 );
 wwv_flow_api.create_list(
  p_id=>wwv_flow_api.id(567464684282645235)
@@ -291,14 +301,16 @@ wwv_flow_api.create_menu_option(
 );
 wwv_flow_api.create_menu_option(
  p_id=>wwv_flow_api.id(572678691903405660)
+,p_parent_id=>wwv_flow_api.id(576251315014207477)
 ,p_short_name=>'Employees'
-,p_link=>'f?p=&APP_ID.:2:&SESSION.'
+,p_link=>'f?p=&APP_ID.:2:&SESSION.::&DEBUG.:::'
 ,p_page_id=>2
 );
 wwv_flow_api.create_menu_option(
  p_id=>wwv_flow_api.id(574146938350629197)
+,p_parent_id=>wwv_flow_api.id(576251315014207477)
 ,p_short_name=>'Manager'
-,p_link=>'f?p=&APP_ID.:5:&SESSION.'
+,p_link=>'f?p=&APP_ID.:5:&SESSION.::&DEBUG.:::'
 ,p_page_id=>5
 );
 wwv_flow_api.create_menu_option(
@@ -308,11 +320,10 @@ wwv_flow_api.create_menu_option(
 ,p_page_id=>7
 );
 wwv_flow_api.create_menu_option(
- p_id=>wwv_flow_api.id(574385984336666051)
-,p_parent_id=>wwv_flow_api.id(574384745914666050)
-,p_short_name=>'Department Edit'
-,p_link=>'f?p=&APP_ID.:8:&SESSION.'
-,p_page_id=>8
+ p_id=>wwv_flow_api.id(576251315014207477)
+,p_short_name=>'People'
+,p_link=>'f?p=&APP_ID.:9:&SESSION.'
+,p_page_id=>9
 );
 end;
 /
@@ -9500,6 +9511,320 @@ wwv_flow_api.create_page_process(
 ,p_error_display_location=>'INLINE_IN_NOTIFICATION'
 ,p_process_when=>'CREATE,SAVE,DELETE'
 ,p_process_when_type=>'REQUEST_IN_CONDITION'
+);
+end;
+/
+prompt --application/pages/page_00009
+begin
+wwv_flow_api.create_page(
+ p_id=>9
+,p_user_interface_id=>wwv_flow_api.id(567464707837645235)
+,p_name=>'People'
+,p_page_mode=>'NORMAL'
+,p_step_title=>'People'
+,p_step_sub_title=>'People'
+,p_step_sub_title_type=>'TEXT_WITH_SUBSTITUTIONS'
+,p_first_item=>'NO_FIRST_ITEM'
+,p_page_template_options=>'#DEFAULT#'
+,p_dialog_chained=>'Y'
+,p_overwrite_navigation_list=>'N'
+,p_page_is_public_y_n=>'N'
+,p_cache_mode=>'NOCACHE'
+,p_help_text=>'No help is available for this page.'
+,p_last_updated_by=>'J.M.SMITH@UTEXAS.EDU'
+,p_last_upd_yyyymmddhh24miss=>'20150217025818'
+);
+wwv_flow_api.create_page_plug(
+ p_id=>wwv_flow_api.id(576250988903207477)
+,p_plug_name=>'Breadcrumb'
+,p_region_template_options=>'#DEFAULT#:t-BreadcrumbRegion--useBreadcrumbTitle'
+,p_component_template_options=>'#DEFAULT#'
+,p_plug_template=>wwv_flow_api.id(567441571364644240)
+,p_plug_display_sequence=>10
+,p_include_in_reg_disp_sel_yn=>'N'
+,p_plug_display_point=>'REGION_POSITION_01'
+,p_menu_id=>wwv_flow_api.id(567465099023645236)
+,p_plug_source_type=>'NATIVE_BREADCRUMB'
+,p_menu_template_id=>wwv_flow_api.id(567460067283645197)
+,p_plug_query_row_template=>1
+);
+wwv_flow_api.create_page_plug(
+ p_id=>wwv_flow_api.id(576251538578207477)
+,p_plug_name=>'People'
+,p_region_template_options=>'#DEFAULT#'
+,p_plug_template=>wwv_flow_api.id(567437982114644108)
+,p_plug_display_sequence=>10
+,p_include_in_reg_disp_sel_yn=>'N'
+,p_plug_display_point=>'BODY'
+,p_plug_source=>wwv_flow_utilities.join(wwv_flow_t_varchar2(
+'select NAME,',
+'       TYPE,',
+'       SSNUM,',
+'       GENDER,',
+'       BIRTH_DATE,',
+'       ADDRESS,',
+'       CITY,',
+'       STATE,',
+'       ZIP,',
+'       HIRE_DATE,',
+'       SALARY,',
+'       PERSON_ID,',
+'       STATUS,',
+'       TITLE,',
+'       RATING,',
+'       BONUS,',
+'       SIM_DEPT_DEPT_ID1,',
+'       SIM_DEPT_DEPT_ID,',
+'       CREATED,',
+'       CREATED_BY,',
+'       ROW_VERSION_NUMBER,',
+'       UPDATED,',
+'       UPDATED_BY',
+'  from SIM_PERSON'))
+,p_plug_source_type=>'NATIVE_IR'
+,p_plug_query_row_template=>1
+);
+wwv_flow_api.create_worksheet(
+ p_id=>wwv_flow_api.id(576251697937207477)
+,p_name=>'People'
+,p_max_row_count=>'1000000'
+,p_max_row_count_message=>'The maximum row count for this report is #MAX_ROW_COUNT# rows.  Please apply a filter to reduce the number of records in your query.'
+,p_no_data_found_message=>'No data found.'
+,p_base_pk1=>'Person_id'
+,p_show_nulls_as=>'-'
+,p_pagination_type=>'ROWS_X_TO_Y'
+,p_pagination_display_pos=>'BOTTOM_RIGHT'
+,p_report_list_mode=>'TABS'
+,p_download_formats=>'CSV:HTML:EMAIL:XLS:PDF:RTF'
+,p_detail_link_text=>'<img src="#IMAGE_PREFIX#menu/pencil16x16.gif" alt="" />'
+,p_owner=>'J.M.SMITH@UTEXAS.EDU'
+,p_internal_uid=>576251697937207477
+);
+wwv_flow_api.create_worksheet_column(
+ p_id=>wwv_flow_api.id(576252038915207478)
+,p_db_column_name=>'NAME'
+,p_display_order=>1
+,p_column_identifier=>'A'
+,p_column_label=>'Name'
+,p_column_type=>'STRING'
+,p_tz_dependent=>'N'
+);
+wwv_flow_api.create_worksheet_column(
+ p_id=>wwv_flow_api.id(576252429496207479)
+,p_db_column_name=>'TYPE'
+,p_display_order=>2
+,p_column_identifier=>'B'
+,p_column_label=>'Type'
+,p_column_type=>'STRING'
+,p_tz_dependent=>'N'
+);
+wwv_flow_api.create_worksheet_column(
+ p_id=>wwv_flow_api.id(576252897980207479)
+,p_db_column_name=>'SSNUM'
+,p_display_order=>3
+,p_column_identifier=>'C'
+,p_column_label=>'Ssnum'
+,p_column_type=>'NUMBER'
+,p_column_alignment=>'RIGHT'
+,p_tz_dependent=>'N'
+);
+wwv_flow_api.create_worksheet_column(
+ p_id=>wwv_flow_api.id(576253296129207479)
+,p_db_column_name=>'GENDER'
+,p_display_order=>4
+,p_column_identifier=>'D'
+,p_column_label=>'Gender'
+,p_column_type=>'STRING'
+,p_tz_dependent=>'N'
+);
+wwv_flow_api.create_worksheet_column(
+ p_id=>wwv_flow_api.id(576253603033207479)
+,p_db_column_name=>'BIRTH_DATE'
+,p_display_order=>5
+,p_column_identifier=>'E'
+,p_column_label=>'Birth Date'
+,p_column_type=>'DATE'
+,p_tz_dependent=>'N'
+);
+wwv_flow_api.create_worksheet_column(
+ p_id=>wwv_flow_api.id(576254019537207480)
+,p_db_column_name=>'ADDRESS'
+,p_display_order=>6
+,p_column_identifier=>'F'
+,p_column_label=>'Address'
+,p_column_type=>'STRING'
+,p_tz_dependent=>'N'
+);
+wwv_flow_api.create_worksheet_column(
+ p_id=>wwv_flow_api.id(576254474879207480)
+,p_db_column_name=>'CITY'
+,p_display_order=>7
+,p_column_identifier=>'G'
+,p_column_label=>'City'
+,p_column_type=>'STRING'
+,p_tz_dependent=>'N'
+);
+wwv_flow_api.create_worksheet_column(
+ p_id=>wwv_flow_api.id(576254877206207480)
+,p_db_column_name=>'STATE'
+,p_display_order=>8
+,p_column_identifier=>'H'
+,p_column_label=>'State'
+,p_column_type=>'STRING'
+,p_tz_dependent=>'N'
+);
+wwv_flow_api.create_worksheet_column(
+ p_id=>wwv_flow_api.id(576255262029207481)
+,p_db_column_name=>'ZIP'
+,p_display_order=>9
+,p_column_identifier=>'I'
+,p_column_label=>'Zip'
+,p_column_type=>'NUMBER'
+,p_column_alignment=>'RIGHT'
+,p_tz_dependent=>'N'
+);
+wwv_flow_api.create_worksheet_column(
+ p_id=>wwv_flow_api.id(576255665381207481)
+,p_db_column_name=>'HIRE_DATE'
+,p_display_order=>10
+,p_column_identifier=>'J'
+,p_column_label=>'Hire Date'
+,p_column_type=>'DATE'
+,p_tz_dependent=>'N'
+);
+wwv_flow_api.create_worksheet_column(
+ p_id=>wwv_flow_api.id(576256017478207482)
+,p_db_column_name=>'SALARY'
+,p_display_order=>11
+,p_column_identifier=>'K'
+,p_column_label=>'Salary'
+,p_column_type=>'NUMBER'
+,p_column_alignment=>'RIGHT'
+,p_tz_dependent=>'N'
+);
+wwv_flow_api.create_worksheet_column(
+ p_id=>wwv_flow_api.id(576256486651207482)
+,p_db_column_name=>'PERSON_ID'
+,p_display_order=>12
+,p_column_identifier=>'L'
+,p_column_label=>'Person Id'
+,p_column_type=>'NUMBER'
+,p_column_alignment=>'RIGHT'
+,p_tz_dependent=>'N'
+);
+wwv_flow_api.create_worksheet_column(
+ p_id=>wwv_flow_api.id(576256861039207482)
+,p_db_column_name=>'STATUS'
+,p_display_order=>13
+,p_column_identifier=>'M'
+,p_column_label=>'Status'
+,p_column_type=>'STRING'
+,p_tz_dependent=>'N'
+);
+wwv_flow_api.create_worksheet_column(
+ p_id=>wwv_flow_api.id(576257255682207483)
+,p_db_column_name=>'TITLE'
+,p_display_order=>14
+,p_column_identifier=>'N'
+,p_column_label=>'Title'
+,p_column_type=>'STRING'
+,p_tz_dependent=>'N'
+);
+wwv_flow_api.create_worksheet_column(
+ p_id=>wwv_flow_api.id(576257693746207483)
+,p_db_column_name=>'RATING'
+,p_display_order=>15
+,p_column_identifier=>'O'
+,p_column_label=>'Rating'
+,p_column_type=>'STRING'
+,p_tz_dependent=>'N'
+);
+wwv_flow_api.create_worksheet_column(
+ p_id=>wwv_flow_api.id(576258087059207484)
+,p_db_column_name=>'BONUS'
+,p_display_order=>16
+,p_column_identifier=>'P'
+,p_column_label=>'Bonus'
+,p_column_type=>'NUMBER'
+,p_column_alignment=>'RIGHT'
+,p_tz_dependent=>'N'
+);
+wwv_flow_api.create_worksheet_column(
+ p_id=>wwv_flow_api.id(576258456479207484)
+,p_db_column_name=>'SIM_DEPT_DEPT_ID1'
+,p_display_order=>17
+,p_column_identifier=>'Q'
+,p_column_label=>'Sim Dept Dept Id1'
+,p_column_type=>'NUMBER'
+,p_column_alignment=>'RIGHT'
+,p_tz_dependent=>'N'
+);
+wwv_flow_api.create_worksheet_column(
+ p_id=>wwv_flow_api.id(576258832058207484)
+,p_db_column_name=>'SIM_DEPT_DEPT_ID'
+,p_display_order=>18
+,p_column_identifier=>'R'
+,p_column_label=>'Sim Dept Dept Id'
+,p_column_type=>'NUMBER'
+,p_column_alignment=>'RIGHT'
+,p_tz_dependent=>'N'
+);
+wwv_flow_api.create_worksheet_column(
+ p_id=>wwv_flow_api.id(576259218323207484)
+,p_db_column_name=>'CREATED'
+,p_display_order=>19
+,p_column_identifier=>'S'
+,p_column_label=>'Created'
+,p_column_type=>'DATE'
+,p_tz_dependent=>'N'
+);
+wwv_flow_api.create_worksheet_column(
+ p_id=>wwv_flow_api.id(576259655891207485)
+,p_db_column_name=>'CREATED_BY'
+,p_display_order=>20
+,p_column_identifier=>'T'
+,p_column_label=>'Created By'
+,p_column_type=>'STRING'
+,p_tz_dependent=>'N'
+);
+wwv_flow_api.create_worksheet_column(
+ p_id=>wwv_flow_api.id(576260072335207485)
+,p_db_column_name=>'ROW_VERSION_NUMBER'
+,p_display_order=>21
+,p_column_identifier=>'U'
+,p_column_label=>'Row Version Number'
+,p_column_type=>'NUMBER'
+,p_column_alignment=>'RIGHT'
+,p_tz_dependent=>'N'
+);
+wwv_flow_api.create_worksheet_column(
+ p_id=>wwv_flow_api.id(576260470871207485)
+,p_db_column_name=>'UPDATED'
+,p_display_order=>22
+,p_column_identifier=>'V'
+,p_column_label=>'Updated'
+,p_column_type=>'DATE'
+,p_tz_dependent=>'N'
+);
+wwv_flow_api.create_worksheet_column(
+ p_id=>wwv_flow_api.id(576260899277207486)
+,p_db_column_name=>'UPDATED_BY'
+,p_display_order=>23
+,p_column_identifier=>'W'
+,p_column_label=>'Updated By'
+,p_column_type=>'STRING'
+,p_tz_dependent=>'N'
+);
+wwv_flow_api.create_worksheet_rpt(
+ p_id=>wwv_flow_api.id(576261277304208549)
+,p_application_user=>'APXWS_DEFAULT'
+,p_report_seq=>10
+,p_report_alias=>'5762613'
+,p_status=>'PUBLIC'
+,p_is_default=>'Y'
+,p_display_rows=>50
+,p_report_columns=>'NAME:TYPE:SSNUM:GENDER:BIRTH_DATE:ADDRESS:CITY:STATE:ZIP:HIRE_DATE:SALARY:PERSON_ID:STATUS:TITLE:RATING:BONUS:SIM_DEPT_DEPT_ID1:SIM_DEPT_DEPT_ID:CREATED:CREATED_BY:ROW_VERSION_NUMBER:UPDATED:UPDATED_BY'
+,p_flashback_enabled=>'N'
 );
 end;
 /
