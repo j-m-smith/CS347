@@ -2,7 +2,10 @@ DROP VIEW sim_manager;
 DROP VIEW sim_employee;
 
 CREATE VIEW sim_employee AS
-  SELECT person_id, title, hire_date, salary, status, rating, sim_dept_dept_id FROM sim_person
+  SELECT person_id, name, ssnum, gender, birth_date, address,
+  city, state, zip,
+  title, hire_date, salary, status, rating, 
+  sim_dept_dept_id FROM sim_person
   WHERE type = 'Employee';
   
 create or replace TRIGGER employee_trigger
@@ -12,6 +15,14 @@ BEGIN
      insert into sim_person(
         PERSON_ID,
         type,
+        name,
+        ssnum,
+        gender,
+        birth_date,
+        address,
+        city,
+        state,
+        zip,
         title,
         hire_date,
         salary,
@@ -22,6 +33,14 @@ BEGIN
      VALUES (
         :new.PERSON_ID,
         'Employee',
+        :new.name,
+        :new.ssnum,
+        :new.gender,
+        :new.birth_date,
+        :new.address, 
+        :new.city,
+        :new.state,
+        :new.zip,
         :new.title,
         :new.hire_date,
         :new.salary,
@@ -32,7 +51,10 @@ END;
 /
 
 CREATE VIEW sim_manager AS
-  SELECT person_id, title, hire_date, salary, status, sim_dept_dept_id1, bonus FROM sim_person
+  SELECT person_id, name, ssnum, gender, birth_date, address,
+  city, state, zip,
+  title, hire_date, salary, status, sim_dept_dept_id1,
+  bonus FROM sim_person
   WHERE type = 'Manager';
   
 create or replace TRIGGER manager_trigger
@@ -42,6 +64,14 @@ BEGIN
      insert into sim_person(
         PERSON_ID,
         type,
+        name,
+        ssnum,
+        gender,
+        birth_date,
+        address,
+        city,
+        state,
+        zip,
         title,
         hire_date,
         salary,
@@ -51,6 +81,14 @@ BEGIN
      VALUES (
         :new.PERSON_ID,
         'Manager',
+        :new.name,
+        :new.ssnum,
+        :new.gender,
+        :new.birth_date,
+        :new.address, 
+        :new.city,
+        :new.state,
+        :new.zip,
         :new.title,
         :new.hire_date,
         :new.salary,
