@@ -1,15 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D239C8C1-A44B-3026-0394-CFC9D0C3C79D" name="project">
-<createdBy>Justin</createdBy>
-<createdTime>2015-02-12 16:00:27 UTC</createdTime>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0B97B9B2-7C41-FE66-F8D9-E128C302397F" name="SIM_project">
+<createdBy>matt</createdBy>
+<createdTime>2015-02-16 23:48:29 UTC</createdTime>
 <generatorID>FED7D412-A7F8-42BA-E332-59B7764FF6DA</generatorID>
 <ownerDesignName>SIM_Logical</ownerDesignName>
 <abbreviation>project</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="project_id" id="DC46419F-9F72-FFFC-C335-2AAD7EA9D6C4">
-<createdBy>Justin</createdBy>
-<createdTime>2015-02-12 16:00:27 UTC</createdTime>
+<Column name="project_id" id="992AF049-E885-6795-0489-0AF76C5F65BC">
+<createdBy>matt</createdBy>
+<createdTime>2015-02-16 23:48:29 UTC</createdTime>
 <generatorID>2117096A-5F21-17B6-CBE9-ADFAE72CD5E8</generatorID>
 <ownerDesignName>SIM_Logical</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -17,9 +18,9 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="name" id="8B857C52-D44C-E3CE-4952-49B0DB44EEC2">
-<createdBy>Justin</createdBy>
-<createdTime>2015-02-12 16:00:27 UTC</createdTime>
+<Column name="name" id="69A30E91-790E-EB41-C4B9-7DAADCC56B2E">
+<createdBy>matt</createdBy>
+<createdTime>2015-02-16 23:48:29 UTC</createdTime>
 <generatorID>1B0D3134-56F3-4CFB-D910-E5BF6FADDD81</generatorID>
 <ownerDesignName>SIM_Logical</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -29,45 +30,45 @@
 <dataTypeSize>255</dataTypeSize>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="dept_dept_id" id="5CC0DDDF-833C-088A-C81C-2606691C368A">
-<createdBy>Justin</createdBy>
-<createdTime>2015-02-12 16:00:27 UTC</createdTime>
+<Column name="SIM_dept_dept_id" id="22B9953F-1B72-1744-BB25-E95C66D00A64">
+<createdBy>matt</createdBy>
+<createdTime>2015-02-16 23:48:29 UTC</createdTime>
 <generatorID>6232C972-9FAA-E654-4F0B-D27BDD143495</generatorID>
 <ownerDesignName>SIM_Logical</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<delegate>20BD4A31-EAAC-2DFB-D060-489D70FBCD0A</delegate>
+<delegate>426AF7D6-06DF-7400-C9D9-3E286F00CD85</delegate>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="90F8B453-FE41-9C2D-1EEF-17EF9ADBC839" referredColumn="20BD4A31-EAAC-2DFB-D060-489D70FBCD0A"/>
+<colAssociation fkAssociation="1314DF80-7105-BD84-E778-6775EEC99B1E" referredColumn="426AF7D6-06DF-7400-C9D9-3E286F00CD85"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="791985C8-80E3-6228-D772-F7199892FA7F" name="project_PK">
-<createdBy>Justin</createdBy>
-<createdTime>2015-02-12 16:00:27 UTC</createdTime>
+<ind_PK_UK id="6124E22E-A07E-5936-4F43-4CF446A07461" name="SIM_project_PK">
+<createdBy>matt</createdBy>
+<createdTime>2015-02-16 23:48:29 UTC</createdTime>
 <generatorID>196A1DC6-2220-D4CB-F74B-D16B963571A4</generatorID>
 <ownerDesignName>SIM_Logical</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="DC46419F-9F72-FFFC-C335-2AAD7EA9D6C4"/>
+<colUsage columnID="992AF049-E885-6795-0489-0AF76C5F65BC"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="5A491130-CD01-AA60-1DA9-3ED7F3BDBDCF" name="project_dept_FK">
-<createdBy>Justin</createdBy>
-<createdTime>2015-02-12 16:00:27 UTC</createdTime>
+<ind_PK_UK id="6F8B5CFC-1D87-94CD-3645-98DAA5143997" name="SIM_project_SIM_dept_FK">
+<createdBy>matt</createdBy>
+<createdTime>2015-02-16 23:48:29 UTC</createdTime>
 <generatorID>D556375E-573D-C9D0-627B-BCA58743F669</generatorID>
 <ownerDesignName>SIM_Logical</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="5CC0DDDF-833C-088A-C81C-2606691C368A"/>
+<colUsage columnID="22B9953F-1B72-1744-BB25-E95C66D00A64"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

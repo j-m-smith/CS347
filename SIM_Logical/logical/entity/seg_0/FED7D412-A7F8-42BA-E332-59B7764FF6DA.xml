@@ -4,7 +4,7 @@
 <createdTime>2015-02-12 14:17:16 UTC</createdTime>
 <ownerDesignName>SIM_Logical</ownerDesignName>
 <engineerTo>
-<item key="A57FCE8D-4BA3-1FC0-6705-74888D6C3B93" value="true"/>
+<item key="71096F5A-E585-3039-96E1-26D27A43CFC2" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -14,7 +14,6 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
-<preferredAbbreviation>project</preferredAbbreviation>
 <shortName>project</shortName>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
 <Attribute name="project_id" id="2117096A-5F21-17B6-CBE9-ADFAE72CD5E8">
@@ -22,7 +21,7 @@
 <createdTime>2015-02-12 14:17:55 UTC</createdTime>
 <ownerDesignName>SIM_Logical</ownerDesignName>
 <engineerTo>
-<item key="A57FCE8D-4BA3-1FC0-6705-74888D6C3B93" value="true"/>
+<item key="71096F5A-E585-3039-96E1-26D27A43CFC2" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -33,7 +32,7 @@
 <createdTime>2015-02-12 14:18:17 UTC</createdTime>
 <ownerDesignName>SIM_Logical</ownerDesignName>
 <engineerTo>
-<item key="A57FCE8D-4BA3-1FC0-6705-74888D6C3B93" value="true"/>
+<item key="71096F5A-E585-3039-96E1-26D27A43CFC2" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -47,7 +46,7 @@
 <generatorID>D556375E-573D-C9D0-627B-BCA58743F669</generatorID>
 <ownerDesignName>SIM_Logical</ownerDesignName>
 <engineerTo>
-<item key="A57FCE8D-4BA3-1FC0-6705-74888D6C3B93" value="true"/>
+<item key="71096F5A-E585-3039-96E1-26D27A43CFC2" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>858BECE2-CBD7-161D-A429-4D7A43A5FBB0</referedAttribute>
@@ -61,9 +60,8 @@
 <createdBy>Justin</createdBy>
 <createdTime>2015-02-12 14:18:14 UTC</createdTime>
 <ownerDesignName>SIM_Logical</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="A57FCE8D-4BA3-1FC0-6705-74888D6C3B93" value="false"/>
+<item key="71096F5A-E585-3039-96E1-26D27A43CFC2" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

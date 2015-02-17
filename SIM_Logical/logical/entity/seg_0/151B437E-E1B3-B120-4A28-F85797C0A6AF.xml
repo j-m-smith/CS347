@@ -4,7 +4,7 @@
 <createdTime>2015-02-12 00:12:43 UTC</createdTime>
 <ownerDesignName>SIM_Logical</ownerDesignName>
 <engineerTo>
-<item key="A57FCE8D-4BA3-1FC0-6705-74888D6C3B93" value="true"/>
+<item key="71096F5A-E585-3039-96E1-26D27A43CFC2" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -14,7 +14,6 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
-<preferredAbbreviation>P</preferredAbbreviation>
 <shortName>Person</shortName>
 <attributeInherType>All atributes</attributeInherType>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
@@ -23,7 +22,7 @@
 <createdTime>2015-02-12 00:14:02 UTC</createdTime>
 <ownerDesignName>SIM_Logical</ownerDesignName>
 <engineerTo>
-<item key="A57FCE8D-4BA3-1FC0-6705-74888D6C3B93" value="true"/>
+<item key="71096F5A-E585-3039-96E1-26D27A43CFC2" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -34,7 +33,7 @@
 <createdTime>2015-02-12 00:14:25 UTC</createdTime>
 <ownerDesignName>SIM_Logical</ownerDesignName>
 <engineerTo>
-<item key="A57FCE8D-4BA3-1FC0-6705-74888D6C3B93" value="true"/>
+<item key="71096F5A-E585-3039-96E1-26D27A43CFC2" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -47,7 +46,7 @@
 <createdTime>2015-02-12 16:18:25 UTC</createdTime>
 <ownerDesignName>SIM_Logical</ownerDesignName>
 <engineerTo>
-<item key="A57FCE8D-4BA3-1FC0-6705-74888D6C3B93" value="true"/>
+<item key="71096F5A-E585-3039-96E1-26D27A43CFC2" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -60,7 +59,7 @@
 <createdTime>2015-02-12 00:14:44 UTC</createdTime>
 <ownerDesignName>SIM_Logical</ownerDesignName>
 <engineerTo>
-<item key="A57FCE8D-4BA3-1FC0-6705-74888D6C3B93" value="true"/>
+<item key="71096F5A-E585-3039-96E1-26D27A43CFC2" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -72,7 +71,7 @@
 <createdTime>2015-02-12 00:14:56 UTC</createdTime>
 <ownerDesignName>SIM_Logical</ownerDesignName>
 <engineerTo>
-<item key="A57FCE8D-4BA3-1FC0-6705-74888D6C3B93" value="true"/>
+<item key="71096F5A-E585-3039-96E1-26D27A43CFC2" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -85,7 +84,7 @@
 <createdTime>2015-02-12 00:15:15 UTC</createdTime>
 <ownerDesignName>SIM_Logical</ownerDesignName>
 <engineerTo>
-<item key="A57FCE8D-4BA3-1FC0-6705-74888D6C3B93" value="true"/>
+<item key="71096F5A-E585-3039-96E1-26D27A43CFC2" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -97,7 +96,7 @@
 <createdTime>2015-02-12 00:15:29 UTC</createdTime>
 <ownerDesignName>SIM_Logical</ownerDesignName>
 <engineerTo>
-<item key="A57FCE8D-4BA3-1FC0-6705-74888D6C3B93" value="true"/>
+<item key="71096F5A-E585-3039-96E1-26D27A43CFC2" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -110,7 +109,7 @@
 <createdTime>2015-02-12 00:15:42 UTC</createdTime>
 <ownerDesignName>SIM_Logical</ownerDesignName>
 <engineerTo>
-<item key="A57FCE8D-4BA3-1FC0-6705-74888D6C3B93" value="true"/>
+<item key="71096F5A-E585-3039-96E1-26D27A43CFC2" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -123,7 +122,7 @@
 <createdTime>2015-02-12 00:15:54 UTC</createdTime>
 <ownerDesignName>SIM_Logical</ownerDesignName>
 <engineerTo>
-<item key="A57FCE8D-4BA3-1FC0-6705-74888D6C3B93" value="true"/>
+<item key="71096F5A-E585-3039-96E1-26D27A43CFC2" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -136,19 +135,7 @@
 <createdTime>2015-02-12 00:16:05 UTC</createdTime>
 <ownerDesignName>SIM_Logical</ownerDesignName>
 <engineerTo>
-<item key="A57FCE8D-4BA3-1FC0-6705-74888D6C3B93" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-</Attribute>
-<Attribute name="emp_id" id="CA3DF12C-7248-19ED-A88E-84F998A8D4D7">
-<createdBy>Justin</createdBy>
-<createdTime>2015-02-12 16:12:19 UTC</createdTime>
-<ownerDesignName>SIM_Logical</ownerDesignName>
-<engineerTo>
-<item key="A57FCE8D-4BA3-1FC0-6705-74888D6C3B93" value="true"/>
+<item key="71096F5A-E585-3039-96E1-26D27A43CFC2" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -160,7 +147,7 @@
 <createdTime>2015-02-12 16:23:14 UTC</createdTime>
 <ownerDesignName>SIM_Logical</ownerDesignName>
 <engineerTo>
-<item key="A57FCE8D-4BA3-1FC0-6705-74888D6C3B93" value="true"/>
+<item key="71096F5A-E585-3039-96E1-26D27A43CFC2" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -172,7 +159,7 @@
 <createdTime>2015-02-12 16:23:39 UTC</createdTime>
 <ownerDesignName>SIM_Logical</ownerDesignName>
 <engineerTo>
-<item key="A57FCE8D-4BA3-1FC0-6705-74888D6C3B93" value="true"/>
+<item key="71096F5A-E585-3039-96E1-26D27A43CFC2" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -184,7 +171,7 @@
 <createdTime>2015-02-12 16:24:02 UTC</createdTime>
 <ownerDesignName>SIM_Logical</ownerDesignName>
 <engineerTo>
-<item key="A57FCE8D-4BA3-1FC0-6705-74888D6C3B93" value="true"/>
+<item key="71096F5A-E585-3039-96E1-26D27A43CFC2" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -197,7 +184,7 @@
 <createdTime>2015-02-12 16:19:21 UTC</createdTime>
 <ownerDesignName>SIM_Logical</ownerDesignName>
 <engineerTo>
-<item key="A57FCE8D-4BA3-1FC0-6705-74888D6C3B93" value="true"/>
+<item key="71096F5A-E585-3039-96E1-26D27A43CFC2" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -210,7 +197,7 @@
 <createdTime>2015-02-12 16:20:33 UTC</createdTime>
 <ownerDesignName>SIM_Logical</ownerDesignName>
 <engineerTo>
-<item key="A57FCE8D-4BA3-1FC0-6705-74888D6C3B93" value="true"/>
+<item key="71096F5A-E585-3039-96E1-26D27A43CFC2" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -223,7 +210,7 @@
 <createdTime>2015-02-12 16:22:25 UTC</createdTime>
 <ownerDesignName>SIM_Logical</ownerDesignName>
 <engineerTo>
-<item key="A57FCE8D-4BA3-1FC0-6705-74888D6C3B93" value="true"/>
+<item key="71096F5A-E585-3039-96E1-26D27A43CFC2" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -236,7 +223,21 @@
 <generatorID>D1F6A15E-FFF3-0A2A-4CBA-ECE9F8431315</generatorID>
 <ownerDesignName>SIM_Logical</ownerDesignName>
 <engineerTo>
-<item key="A57FCE8D-4BA3-1FC0-6705-74888D6C3B93" value="true"/>
+<item key="71096F5A-E585-3039-96E1-26D27A43CFC2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>858BECE2-CBD7-161D-A429-4D7A43A5FBB0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="dept_id1" id="3E826F3B-8660-DDE8-F96D-A3A3659084D1">
+<createdBy>matt</createdBy>
+<createdTime>2015-02-16 23:40:25 UTC</createdTime>
+<generatorID>B76CD4DA-587B-9C1B-075B-461E2048D1F6</generatorID>
+<ownerDesignName>SIM_Logical</ownerDesignName>
+<engineerTo>
+<item key="71096F5A-E585-3039-96E1-26D27A43CFC2" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>858BECE2-CBD7-161D-A429-4D7A43A5FBB0</referedAttribute>
@@ -251,7 +252,7 @@
 <createdTime>2015-02-12 00:14:10 UTC</createdTime>
 <ownerDesignName>SIM_Logical</ownerDesignName>
 <engineerTo>
-<item key="A57FCE8D-4BA3-1FC0-6705-74888D6C3B93" value="true"/>
+<item key="71096F5A-E585-3039-96E1-26D27A43CFC2" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
