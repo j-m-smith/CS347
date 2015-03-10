@@ -27,7 +27,7 @@ prompt APPLICATION 13769 - 2015 SIM
 -- Application Export:
 --   Application:     13769
 --   Name:            2015 SIM
---   Date and Time:   02:36 Tuesday March 10, 2015
+--   Date and Time:   03:08 Tuesday March 10, 2015
 --   Exported By:     ENT-UT@STARRANT.COM
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -36,11 +36,11 @@ prompt APPLICATION 13769 - 2015 SIM
 --
 
 -- Application Statistics:
---   Pages:                     13
---     Items:                   48
---     Processes:               25
+--   Pages:                     12
+--     Items:                   46
+--     Processes:               21
 --     Regions:                 24
---     Buttons:                 31
+--     Buttons:                 30
 --     Dynamic Actions:         16
 --   Shared Components:
 --     Logic:
@@ -107,7 +107,7 @@ wwv_flow_api.create_flow(
 ,p_rejoin_existing_sessions=>'N'
 ,p_csv_encoding=>'Y'
 ,p_last_updated_by=>'ENT-UT@STARRANT.COM'
-,p_last_upd_yyyymmddhh24miss=>'20150310022817'
+,p_last_upd_yyyymmddhh24miss=>'20150310030640'
 ,p_ui_type_name => null
 );
 end;
@@ -7419,8 +7419,7 @@ begin
 wwv_flow_api.create_authentication(
  p_id=>wwv_flow_api.id(1467783328596706427)
 ,p_name=>'No Authentication'
-,p_scheme_type=>'NATIVE_APEX_ACCOUNTS'
-,p_invalid_session_type=>'LOGIN'
+,p_scheme_type=>'NATIVE_DAD'
 ,p_use_secure_cookie_yn=>'N'
 ,p_ras_mode=>0
 );
@@ -7476,7 +7475,75 @@ wwv_flow_api.create_page(
 ,p_page_is_public_y_n=>'N'
 ,p_cache_mode=>'NOCACHE'
 ,p_help_text=>'No help is available for this page.'
-,p_last_upd_yyyymmddhh24miss=>'20150218030207'
+,p_last_updated_by=>'ENT-UT@STARRANT.COM'
+,p_last_upd_yyyymmddhh24miss=>'20150310030640'
+);
+wwv_flow_api.create_page_plug(
+ p_id=>wwv_flow_api.id(943591339121244510)
+,p_plug_name=>'Description of Changes'
+,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
+,p_plug_template=>wwv_flow_api.id(1467756372068705257)
+,p_plug_display_sequence=>10
+,p_include_in_reg_disp_sel_yn=>'Y'
+,p_plug_display_point=>'BODY'
+,p_plug_source=>wwv_flow_utilities.join(wwv_flow_t_varchar2(
+'<p>We implemented a Shuttle to change employee assignments on projects while editing or creating a project.</p>',
+'',
+'<p>We added the Shuttle as an item to the form on SIM_Projects in the form region. It uses a list of values to dynamically get the names of the employees in the department that the project is in. It moves the employees currently assigned to the proje'
+||'ct to the right side of the shuttle. </p>',
+'',
+'<p> The list of values used to supply the person names is generated with the following SQL.',
+'<hr/>',
+'<code>select p.name as d,',
+'       p.person_id as r',
+'  from SIM_person p join SIM_dept d ',
+'       on p.Sim_dept_dept_id = d.dept_id',
+'       where d.dept_id = :P12_SIM_DEPT_DEPT_ID',
+' order by 1',
+' </code>',
+'</p>',
+'<hr/>',
+'',
+'<p>When the form is submitted, a PL/SQL script runs which parses the ids of the employees selected into a collection. It then inserts any new employees into the SIM_p2p table, and deletes any employees that are no longer assigned to the project. This'
+||' ensures that the list of employees assigned to the project is the same as the list selected in the shuttle regardless of any operations performed on the shuttle. The PL/SQL script is as follows, it runs in a Processing event that runs after the form'
+||' is submitted.',
+'<hr/>',
+'<code>declare',
+'    tab apex_application_global.vc_arr2;',
+'    person_cnt   pls_integer;',
+'begin',
+'    APEX_COLLECTION.CREATE_OR_TRUNCATE_COLLECTION(p_collection_name => ''P12COL'');',
+'    tab := apex_util.string_to_table (:p12_employees);',
+'',
+'    FOR i IN 1 .. tab.count LOOP',
+'        APEX_COLLECTION.ADD_MEMBER(',
+'          p_collection_name => ''P12COL'',',
+'          p_c001 => tab(i)',
+'        );',
+'    END LOOP;',
+'',
+'    insert into SIM_p2p (SIM_person_person_id, SIM_project_project_id)',
+'        select c001, :P12_PROJECT_ID ',
+'        from apex_collections',
+'        where collection_name = ''P12COL'' and',
+'            not exists (select 1 from SIM_p2p o where o.SIM_person_person_id = c001 and',
+'                           o.SIM_project_project_id = :P12_PROJECT_ID);',
+'',
+'    delete from SIM_p2p where ',
+'        SIM_project_project_id = :P12_PROJECT_ID and',
+'        not exists (select 1 from apex_collections',
+'                       where collection_name = ''P12COL'' and c001 = SIM_person_person_id);',
+'end;',
+'</code>',
+'</p>',
+'<hr/>',
+'',
+'<p>The list of values used to populate the shuttle reloads whenever the department selection is changed. This is done by setting the Cascading LOV Reload on the shuttle to the SIM_dept_dept_id field.</p>',
+'',
+'<p>We also had to change the form preferences to assign the project_id of the new project to the P12_PROJECT_ID page item when a project is created so that the assignment rows can be created.</p>'))
+,p_plug_query_options=>'DERIVED_REPORT_COLUMNS'
+,p_attribute_01=>'N'
+,p_attribute_02=>'HTML'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(1467783920092706428)
@@ -10185,7 +10252,7 @@ wwv_flow_api.create_page(
 ,p_cache_mode=>'NOCACHE'
 ,p_help_text=>'No help is available for this page.'
 ,p_last_updated_by=>'ENT-UT@STARRANT.COM'
-,p_last_upd_yyyymmddhh24miss=>'20150310022817'
+,p_last_upd_yyyymmddhh24miss=>'20150310030156'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(1468664001008848781)
@@ -10308,7 +10375,7 @@ wwv_flow_api.create_page_item(
 '       on p.Sim_dept_dept_id = d.dept_id',
 '       where d.dept_id = :P12_SIM_DEPT_DEPT_ID',
 ' order by 1'))
-,p_lov_cascade_parent_items=>'P12_SIM_DEPT_DEPT_ID,P12_NAME'
+,p_lov_cascade_parent_items=>'P12_SIM_DEPT_DEPT_ID'
 ,p_ajax_optimize_refresh=>'N'
 ,p_cHeight=>1
 ,p_begin_on_new_line=>'N'
@@ -11005,131 +11072,6 @@ wwv_flow_api.create_page_process(
 ,p_error_display_location=>'INLINE_IN_NOTIFICATION'
 ,p_process_when=>'CREATE,SAVE,DELETE'
 ,p_process_when_type=>'REQUEST_IN_CONDITION'
-);
-end;
-/
-prompt --application/pages/page_00024
-begin
-wwv_flow_api.create_page(
- p_id=>24
-,p_user_interface_id=>wwv_flow_api.id(1467783090526706426)
-,p_name=>'Login Page'
-,p_alias=>'LOGIN_DESKTOP'
-,p_page_mode=>'NORMAL'
-,p_step_title=>'2015 SIM - Log In'
-,p_step_sub_title_type=>'TEXT_WITH_SUBSTITUTIONS'
-,p_first_item=>'AUTO_FIRST_ITEM'
-,p_autocomplete_on_off=>'OFF'
-,p_step_template=>wwv_flow_api.id(1467692907590704677)
-,p_page_template_options=>'#DEFAULT#'
-,p_dialog_chained=>'Y'
-,p_overwrite_navigation_list=>'N'
-,p_page_is_public_y_n=>'Y'
-,p_cache_mode=>'NOCACHE'
-,p_last_updated_by=>'PHIL.CANNATA@ORACLE.COM'
-,p_last_upd_yyyymmddhh24miss=>'20150218035801'
-);
-wwv_flow_api.create_page_plug(
- p_id=>wwv_flow_api.id(1469698979420028828)
-,p_plug_name=>'Log In'
-,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
-,p_plug_template=>wwv_flow_api.id(1467756372068705257)
-,p_plug_display_sequence=>10
-,p_include_in_reg_disp_sel_yn=>'N'
-,p_plug_display_point=>'BODY'
-,p_plug_query_row_template=>1
-,p_attribute_01=>'N'
-,p_attribute_02=>'TEXT'
-,p_attribute_03=>'Y'
-);
-wwv_flow_api.create_page_button(
- p_id=>wwv_flow_api.id(1469700176299028830)
-,p_button_sequence=>30
-,p_button_plug_id=>wwv_flow_api.id(1469698979420028828)
-,p_button_name=>'LOGIN'
-,p_button_action=>'SUBMIT'
-,p_button_template_options=>'#DEFAULT#'
-,p_button_template_id=>wwv_flow_api.id(1467777962323706313)
-,p_button_is_hot=>'Y'
-,p_button_image_alt=>'Log In'
-,p_button_position=>'REGION_TEMPLATE_CREATE'
-,p_button_alignment=>'LEFT'
-,p_grid_new_grid=>false
-,p_grid_new_row=>'Y'
-,p_grid_new_column=>'Y'
-);
-wwv_flow_api.create_page_item(
- p_id=>wwv_flow_api.id(1469699381818028829)
-,p_name=>'P24_USERNAME'
-,p_item_sequence=>10
-,p_item_plug_id=>wwv_flow_api.id(1469698979420028828)
-,p_prompt=>'Username'
-,p_display_as=>'NATIVE_TEXT_FIELD'
-,p_cSize=>40
-,p_cMaxlength=>100
-,p_label_alignment=>'RIGHT'
-,p_field_template=>wwv_flow_api.id(1467777372702706134)
-,p_item_template_options=>'#DEFAULT#'
-,p_attribute_01=>'N'
-,p_attribute_02=>'N'
-,p_attribute_03=>'N'
-,p_attribute_04=>'TEXT'
-,p_attribute_05=>'NONE'
-);
-wwv_flow_api.create_page_item(
- p_id=>wwv_flow_api.id(1469699862047028829)
-,p_name=>'P24_PASSWORD'
-,p_item_sequence=>20
-,p_item_plug_id=>wwv_flow_api.id(1469698979420028828)
-,p_prompt=>'Password'
-,p_display_as=>'NATIVE_PASSWORD'
-,p_cSize=>40
-,p_cMaxlength=>100
-,p_label_alignment=>'RIGHT'
-,p_field_template=>wwv_flow_api.id(1467777372702706134)
-,p_item_template_options=>'#DEFAULT#'
-,p_attribute_01=>'Y'
-,p_attribute_02=>'Y'
-);
-wwv_flow_api.create_page_process(
- p_id=>wwv_flow_api.id(1469701025472028831)
-,p_process_sequence=>10
-,p_process_point=>'AFTER_SUBMIT'
-,p_process_type=>'NATIVE_PLSQL'
-,p_process_name=>'Set Username Cookie'
-,p_process_sql_clob=>wwv_flow_utilities.join(wwv_flow_t_varchar2(
-'apex_authentication.send_login_username_cookie (',
-'    p_username => lower(:P24_USERNAME) );'))
-,p_error_display_location=>'INLINE_IN_NOTIFICATION'
-);
-wwv_flow_api.create_page_process(
- p_id=>wwv_flow_api.id(1469700659767028830)
-,p_process_sequence=>20
-,p_process_point=>'AFTER_SUBMIT'
-,p_process_type=>'NATIVE_PLSQL'
-,p_process_name=>'Login'
-,p_process_sql_clob=>wwv_flow_utilities.join(wwv_flow_t_varchar2(
-'apex_authentication.login(',
-'    p_username => :P24_USERNAME,',
-'    p_password => :P24_PASSWORD );'))
-,p_error_display_location=>'INLINE_IN_NOTIFICATION'
-);
-wwv_flow_api.create_page_process(
- p_id=>wwv_flow_api.id(1469701852049028831)
-,p_process_sequence=>30
-,p_process_point=>'AFTER_SUBMIT'
-,p_process_type=>'NATIVE_SESSION_STATE'
-,p_process_name=>'Clear Page(s) Cache'
-,p_attribute_01=>'CLEAR_CACHE_CURRENT_PAGE'
-,p_error_display_location=>'INLINE_IN_NOTIFICATION'
-);
-wwv_flow_api.create_page_process(
- p_id=>wwv_flow_api.id(1469701450463028831)
-,p_process_sequence=>10
-,p_process_point=>'BEFORE_HEADER'
-,p_process_type=>'NATIVE_PLSQL'
-,p_process_name=>'Get Username Cookie'
-,p_process_sql_clob=>':P24_USERNAME := apex_authentication.get_login_username_cookie;'
 );
 end;
 /
