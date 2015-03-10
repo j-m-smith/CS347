@@ -27,7 +27,7 @@ prompt APPLICATION 13769 - 2015 SIM
 -- Application Export:
 --   Application:     13769
 --   Name:            2015 SIM
---   Date and Time:   03:08 Tuesday March 10, 2015
+--   Date and Time:   03:13 Tuesday March 10, 2015
 --   Exported By:     ENT-UT@STARRANT.COM
 --   Flashback:       0
 --   Export Type:     Application Export
@@ -39,7 +39,7 @@ prompt APPLICATION 13769 - 2015 SIM
 --   Pages:                     12
 --     Items:                   46
 --     Processes:               21
---     Regions:                 24
+--     Regions:                 25
 --     Buttons:                 30
 --     Dynamic Actions:         16
 --   Shared Components:
@@ -107,7 +107,7 @@ wwv_flow_api.create_flow(
 ,p_rejoin_existing_sessions=>'N'
 ,p_csv_encoding=>'Y'
 ,p_last_updated_by=>'ENT-UT@STARRANT.COM'
-,p_last_upd_yyyymmddhh24miss=>'20150310030640'
+,p_last_upd_yyyymmddhh24miss=>'20150310031238'
 ,p_ui_type_name => null
 );
 end;
@@ -7476,14 +7476,14 @@ wwv_flow_api.create_page(
 ,p_cache_mode=>'NOCACHE'
 ,p_help_text=>'No help is available for this page.'
 ,p_last_updated_by=>'ENT-UT@STARRANT.COM'
-,p_last_upd_yyyymmddhh24miss=>'20150310030640'
+,p_last_upd_yyyymmddhh24miss=>'20150310031238'
 );
 wwv_flow_api.create_page_plug(
  p_id=>wwv_flow_api.id(943591339121244510)
 ,p_plug_name=>'Description of Changes'
 ,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
 ,p_plug_template=>wwv_flow_api.id(1467756372068705257)
-,p_plug_display_sequence=>10
+,p_plug_display_sequence=>20
 ,p_include_in_reg_disp_sel_yn=>'Y'
 ,p_plug_display_point=>'BODY'
 ,p_plug_source=>wwv_flow_utilities.join(wwv_flow_t_varchar2(
@@ -7541,6 +7541,19 @@ wwv_flow_api.create_page_plug(
 '<p>The list of values used to populate the shuttle reloads whenever the department selection is changed. This is done by setting the Cascading LOV Reload on the shuttle to the SIM_dept_dept_id field.</p>',
 '',
 '<p>We also had to change the form preferences to assign the project_id of the new project to the P12_PROJECT_ID page item when a project is created so that the assignment rows can be created.</p>'))
+,p_plug_query_options=>'DERIVED_REPORT_COLUMNS'
+,p_attribute_01=>'N'
+,p_attribute_02=>'HTML'
+);
+wwv_flow_api.create_page_plug(
+ p_id=>wwv_flow_api.id(943591428003244511)
+,p_plug_name=>'HW6 - Shuttle'
+,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
+,p_plug_template=>wwv_flow_api.id(1467756372068705257)
+,p_plug_display_sequence=>10
+,p_include_in_reg_disp_sel_yn=>'Y'
+,p_plug_display_point=>'BODY'
+,p_plug_source=>'<h5> Matt Allen - Emily Tarrant - Justin Smith</h5>'
 ,p_plug_query_options=>'DERIVED_REPORT_COLUMNS'
 ,p_attribute_01=>'N'
 ,p_attribute_02=>'HTML'
