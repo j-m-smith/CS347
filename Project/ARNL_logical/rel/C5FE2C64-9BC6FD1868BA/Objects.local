@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="7E3A4C22-C1E1-D68B-775D-4C8F5755253C" name="ARLNL_Notification_list" seqName="seg_0"/>
+   <object objectType="Table" objectID="EABE4748-6CB2-672E-FD8E-93B8882915A1" name="ARLNL_User" seqName="seg_0"/>
+   <object objectType="Table" objectID="2EC5EFF2-2B45-24EB-A0EC-71868F62D657" name="Relation_1" seqName="seg_0"/>
+   <object objectType="Table" objectID="09E13857-142C-4E93-9A20-D2CFA03EB8C4" name="Relation_2" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="1FB6BC49-8A79-216F-11C3-002072BEC006" name="FK_ASS_1" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="C4B34CD5-2638-1F54-E590-8285C13AD3DF" name="FK_ASS_2" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="8A3970AE-D119-F8FA-6D01-3C539F679408" name="FK_ASS_3" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="6291DEF3-ACC3-F5A3-6088-E38951AA2B63" name="FK_ASS_4" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

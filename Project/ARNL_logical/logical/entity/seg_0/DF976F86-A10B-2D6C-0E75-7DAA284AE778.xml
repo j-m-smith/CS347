@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DF976F86-A10B-2D6C-0E75-7DAA284AE778" name="ARLNL List_List">
+<createdBy>Justin</createdBy>
+<createdTime>2015-03-30 23:13:36 UTC</createdTime>
+<ownerDesignName>ARNL_logical</ownerDesignName>
+<engineerTo>
+<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="LIST SEQ ID" id="46F3D16F-0AAE-802B-870C-CBEF70F54286">
+<createdBy>Justin</createdBy>
+<createdTime>2015-03-30 23:15:01 UTC</createdTime>
+<generatorID>95786F3C-02AF-44B7-CCDA-94C351819713</generatorID>
+<ownerDesignName>ARNL_logical</ownerDesignName>
+<engineerTo>
+<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>8AA645DD-9C9A-826A-C76A-A6F65891D471</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="LIST SEQ ID1" id="2497E799-AA09-B9B0-296E-A9198803A700">
+<createdBy>Justin</createdBy>
+<createdTime>2015-03-30 23:15:10 UTC</createdTime>
+<generatorID>D5902C4C-AD8C-25E8-EA6D-50F9D169BB8F</generatorID>
+<ownerDesignName>ARNL_logical</ownerDesignName>
+<engineerTo>
+<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+</engineerTo>
+<referedAttribute>8AA645DD-9C9A-826A-C76A-A6F65891D471</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FCAD81FE-3B46-2CD2-1E61-E629F73CEF34" name="ARLNL_User_PK">
+<createdBy>Justin</createdBy>
+<createdTime>2015-03-30 23:13:36 UTC</createdTime>
+<ownerDesignName>ARNL_logical</ownerDesignName>
+<engineerTo>
+<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2497E799-AA09-B9B0-296E-A9198803A700</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

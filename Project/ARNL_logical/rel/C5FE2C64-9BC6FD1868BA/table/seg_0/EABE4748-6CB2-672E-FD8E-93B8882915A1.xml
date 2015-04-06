@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EABE4748-6CB2-672E-FD8E-93B8882915A1" name="ARLNL_User">
+<createdBy>Justin</createdBy>
+<createdTime>2015-03-30 19:55:28 UTC</createdTime>
+<generatorID>6CBA124F-C842-61E2-B95D-5490695A6D88</generatorID>
+<ownerDesignName>ARNL_logical</ownerDesignName>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EMPLOYEE_ID" id="1BDA5EBA-BFBF-1C14-048A-54ECF761FC23">
+<createdBy>Justin</createdBy>
+<createdTime>2015-03-30 19:55:28 UTC</createdTime>
+<generatorID>3C52F3ED-4218-4753-7CBF-6248FEF15562</generatorID>
+<notes>Unique identifier for an employee generated from a sequence.</notes>
+<ownerDesignName>ARNL_logical</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMPLOYEE_NAME" id="FECC82E1-639A-0AD9-75C1-F3C61DD0AC4C">
+<createdBy>Justin</createdBy>
+<createdTime>2015-03-30 19:55:28 UTC</createdTime>
+<generatorID>2BCCEFB5-0DA7-902F-4D29-AE4DA9D88261</generatorID>
+<notes>Employee name in the format	&quot;LastName, FirstName MI.&quot;</notes>
+<ownerDesignName>ARNL_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMPLOYEE_LAB" id="AD874FCB-45D8-53DB-B22F-A656F05F66A8">
+<createdBy>Justin</createdBy>
+<createdTime>2015-03-30 19:55:28 UTC</createdTime>
+<generatorID>83CD18D2-CDD1-08C6-A2FE-9A605C8E5B4F</generatorID>
+<notes>4-character lab code identifying which lab the employee is appointed to.</notes>
+<ownerDesignName>ARNL_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMPLOYEE_DIVISION" id="12AB61E8-8F57-6E36-12A2-4D4265463050">
+<createdBy>Justin</createdBy>
+<createdTime>2015-03-30 19:55:28 UTC</createdTime>
+<generatorID>CDC79F43-612A-FF8A-BFAE-08E8BE4465D2</generatorID>
+<notes>4-character division code identifying which division of a lab	the employee is appointed to.</notes>
+<ownerDesignName>ARNL_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMPLOYEE_STATUS" id="C0867017-5A14-B61F-3AEE-B18BF14FC232">
+<createdBy>Justin</createdBy>
+<createdTime>2015-03-30 19:55:28 UTC</createdTime>
+<generatorID>A719585E-36F2-665B-7BBB-94307EA2CB1C</generatorID>
+<notes>A for active or I for inactive</notes>
+<ownerDesignName>ARNL_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS_EFF_DATE" id="97369F27-C080-AEFC-DE0B-55FB3F9C44CB">
+<createdBy>Justin</createdBy>
+<createdTime>2015-03-30 19:55:28 UTC</createdTime>
+<generatorID>9F4F46E7-25A3-6C02-BED8-2F6B91B93CDB</generatorID>
+<notes>Date the employee_status became effective</notes>
+<ownerDesignName>ARNL_logical</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7157245E-7445-5561-D45C-1DCAD7CD82EC" name="ARLNL_User_PK">
+<createdBy>Justin</createdBy>
+<createdTime>2015-03-30 19:55:28 UTC</createdTime>
+<generatorID>E2CB4A56-F337-396C-C8D5-830DC4EAFE3B</generatorID>
+<ownerDesignName>ARNL_logical</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1BDA5EBA-BFBF-1C14-048A-54ECF761FC23"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
