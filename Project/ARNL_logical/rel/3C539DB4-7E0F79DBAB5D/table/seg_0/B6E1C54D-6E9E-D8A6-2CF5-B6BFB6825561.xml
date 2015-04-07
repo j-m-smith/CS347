@@ -1,14 +1,15 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7E3A4C22-C1E1-D68B-775D-4C8F5755253C" name="ARLNL_Notification_list">
-<createdBy>Justin</createdBy>
-<createdTime>2015-03-30 19:55:28 UTC</createdTime>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B6E1C54D-6E9E-D8A6-2CF5-B6BFB6825561" name="ARLNL_Notification_list">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-06 23:42:46 UTC</createdTime>
 <generatorID>BB5276BF-CFF6-48CC-B1F0-9B2FDC4ECCDB</generatorID>
 <ownerDesignName>ARNL_logical</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="LIST_SEQ_ID" id="150FDDF7-3155-EC9D-FA79-6824DD168E5E">
-<createdBy>Justin</createdBy>
-<createdTime>2015-03-30 19:55:28 UTC</createdTime>
+<Column name="LIST_SEQ_ID" id="B771A4D0-CE8C-6589-91B9-FD218F72E119">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-06 23:42:46 UTC</createdTime>
 <generatorID>8AA645DD-9C9A-826A-C76A-A6F65891D471</generatorID>
 <notes>Unique identifier generated from a sequence</notes>
 <ownerDesignName>ARNL_logical</ownerDesignName>
@@ -17,9 +18,9 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="LIST_NAME" id="9EE98017-AAB1-8876-76CC-005231C9DEA7">
-<createdBy>Justin</createdBy>
-<createdTime>2015-03-30 19:55:28 UTC</createdTime>
+<Column name="LIST_NAME" id="6734D23C-FEF0-DA79-7C74-5E3AA6569BD1">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-06 23:42:46 UTC</createdTime>
 <comment>required</comment>
 <generatorID>B2364424-CDF9-FD17-47DC-12AA106DCDB6</generatorID>
 <notes>Unique name for the mailing list - no spaces	allowed.</notes>
@@ -31,9 +32,9 @@
 <dataTypeSize>40</dataTypeSize>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="OWNERSHIP_DIV_CODE" id="762E4147-F4B8-AB6F-DE81-CD3BE38B029E">
-<createdBy>Justin</createdBy>
-<createdTime>2015-03-30 19:55:28 UTC</createdTime>
+<Column name="OWNERSHIP_DIV_CODE" id="EBABC078-450D-520B-85F9-E9F39B96BF14">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-06 23:42:46 UTC</createdTime>
 <generatorID>46BAF6B5-6D40-5807-4A65-A27AD59DE318</generatorID>
 <notes>4-character division code&lt;br/&gt;&lt;br/&gt;- default to the user’s division&lt;br/&gt;but the user should be able to override that and identify a different	division code for ownership.</notes>
 <ownerDesignName>ARNL_logical</ownerDesignName>
@@ -44,9 +45,9 @@
 <dataTypeSize>4</dataTypeSize>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="LIST_DESCRIPTION" id="B895B1A1-8E02-AF2C-9D56-BE44838E4641">
-<createdBy>Justin</createdBy>
-<createdTime>2015-03-30 19:55:28 UTC</createdTime>
+<Column name="LIST_DESCRIPTION" id="B5FFED96-4621-92E8-D247-74E03915168E">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-06 23:42:46 UTC</createdTime>
 <comment>required</comment>
 <generatorID>34CAD88C-CF3D-0044-5E73-5A56ABA1139B</generatorID>
 <notes>Text description for defining the usage of the list</notes>
@@ -58,9 +59,9 @@
 <dataTypeSize>3500</dataTypeSize>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="EXTERNAL_VIEW_NAME" id="A2D75699-2C3C-C655-8019-D312F22797C4">
-<createdBy>Justin</createdBy>
-<createdTime>2015-03-30 19:55:28 UTC</createdTime>
+<Column name="EXTERNAL_VIEW_NAME" id="77C0057E-D3C4-E446-FD12-BDAA0F3F6435">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-06 23:42:46 UTC</createdTime>
 <generatorID>90C6BAB3-73E7-3A0B-9303-579E1A695F38</generatorID>
 <notes>50-character text field to reference an external view name.</notes>
 <ownerDesignName>ARNL_logical</ownerDesignName>
@@ -71,9 +72,9 @@
 <dataTypeSize>50</dataTypeSize>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CREATION_DATE" id="0E16F96F-72FE-DCC3-7053-6D9F6E6542E6">
-<createdBy>Justin</createdBy>
-<createdTime>2015-03-30 19:55:28 UTC</createdTime>
+<Column name="CREATION_DATE" id="DAD3891D-0E2F-1EDA-8EA1-905F93630BB6">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-06 23:42:46 UTC</createdTime>
 <generatorID>55BB08EF-D6EE-0C1E-E600-9749DDA5C3D6</generatorID>
 <ownerDesignName>ARNL_logical</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -82,9 +83,9 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="LIST_STATUS" id="B6197390-CDEB-8662-E69D-31550A7178DE">
-<createdBy>Justin</createdBy>
-<createdTime>2015-03-30 19:55:28 UTC</createdTime>
+<Column name="LIST_STATUS" id="87A0F321-BDC8-5D83-7C49-92928105351A">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-06 23:42:46 UTC</createdTime>
 <generatorID>2C6DEE38-AAC5-E000-0EC5-9AFA9C7A4FC7</generatorID>
 <notes>A for active or I for inactive </notes>
 <ownerDesignName>ARNL_logical</ownerDesignName>
@@ -95,9 +96,9 @@
 <dataTypeSize>255</dataTypeSize>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="STATUS_EFF_DATE" id="85DDDC29-CF34-BABA-2BCF-FC8056641C99">
-<createdBy>Justin</createdBy>
-<createdTime>2015-03-30 19:55:28 UTC</createdTime>
+<Column name="STATUS_EFF_DATE" id="7527CC7C-1F1F-6517-1D64-8D7010CB1663">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-06 23:42:46 UTC</createdTime>
 <generatorID>D0D732D5-A024-5606-D024-BBC10B192933</generatorID>
 <ownerDesignName>ARNL_logical</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -108,16 +109,16 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="E9C17CD2-32F0-1E54-D487-48DB95174E46" name="ARLNL_Notification_list_PK">
-<createdBy>Justin</createdBy>
-<createdTime>2015-03-30 19:55:28 UTC</createdTime>
+<ind_PK_UK id="FF233A45-6358-F09A-5E7B-064BDD7BE425" name="ARLNL_Notification_list_PK">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-06 23:42:46 UTC</createdTime>
 <generatorID>CB1176AD-DAFE-900F-CC53-7C8C6BD1D143</generatorID>
 <ownerDesignName>ARNL_logical</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="150FDDF7-3155-EC9D-FA79-6824DD168E5E"/>
+<colUsage columnID="B771A4D0-CE8C-6589-91B9-FD218F72E119"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -4,7 +4,7 @@
 <createdTime>2015-03-30 23:10:17 UTC</createdTime>
 <ownerDesignName>ARNL_logical</ownerDesignName>
 <engineerTo>
-<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+<item key="E17D0A27-874E-D75A-145E-CF8C78D5F1C0" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -15,45 +15,56 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="EMPLOYEE ID" id="1AE7D6D9-3A1F-7150-C21D-561E73423599">
-<createdBy>Justin</createdBy>
-<createdTime>2015-03-30 23:12:13 UTC</createdTime>
-<generatorID>E51839AD-5B8D-6274-1B95-D994D357EE7A</generatorID>
+<Attribute name="user_list_id" id="106B3C2A-4952-B3FB-8D3A-79A9BD8DA0E1">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-06 23:25:06 UTC</createdTime>
 <ownerDesignName>ARNL_logical</ownerDesignName>
 <engineerTo>
-<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+<item key="E17D0A27-874E-D75A-145E-CF8C78D5F1C0" value="true"/>
 </engineerTo>
-<referedAttribute>3C52F3ED-4218-4753-7CBF-6248FEF15562</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
-<Attribute name="LIST SEQ ID" id="CEDC061C-FCEE-6EB3-32C6-132ECAAF8FDA">
-<createdBy>Justin</createdBy>
-<createdTime>2015-03-30 23:12:24 UTC</createdTime>
-<generatorID>45AC6C38-9DD0-637C-194F-A9723B9624F3</generatorID>
+<Attribute name="LIST SEQ ID" id="F55FCFD8-D240-D634-4ACA-BCD03CEEC36D">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-06 23:28:03 UTC</createdTime>
+<generatorID>05686B41-01B0-6598-1722-EE71B53DDF45</generatorID>
 <ownerDesignName>ARNL_logical</ownerDesignName>
 <engineerTo>
-<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+<item key="E17D0A27-874E-D75A-145E-CF8C78D5F1C0" value="true"/>
 </engineerTo>
 <referedAttribute>8AA645DD-9C9A-826A-C76A-A6F65891D471</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
+<Attribute name="EMPLOYEE ID" id="634F4215-2A50-458A-1338-D450A3B41DD6">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-06 23:28:09 UTC</createdTime>
+<generatorID>463A8F90-415F-0D85-83B0-054A92CF5085</generatorID>
+<ownerDesignName>ARNL_logical</ownerDesignName>
+<engineerTo>
+<item key="E17D0A27-874E-D75A-145E-CF8C78D5F1C0" value="true"/>
+</engineerTo>
+<referedAttribute>3C52F3ED-4218-4753-7CBF-6248FEF15562</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="C1F54DF5-CF6B-0C01-87AC-5C08758488E2" name="ARLNL_User_PK">
+<identifier id="C1F54DF5-CF6B-0C01-87AC-5C08758488E2" name="ARLNL_User_List_PK">
 <createdBy>Justin</createdBy>
 <createdTime>2015-03-30 23:10:17 UTC</createdTime>
 <ownerDesignName>ARNL_logical</ownerDesignName>
 <engineerTo>
-<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+<item key="E17D0A27-874E-D75A-145E-CF8C78D5F1C0" value="true"/>
 </engineerTo>
 <pk>true</pk>
+<newElementsIDs>106B3C2A-4952-B3FB-8D3A-79A9BD8DA0E1</newElementsIDs>
 <usedAttributes>
-<attributeRef>1AE7D6D9-3A1F-7150-C21D-561E73423599</attributeRef>
-<attributeRef>CEDC061C-FCEE-6EB3-32C6-132ECAAF8FDA</attributeRef>
+<attributeRef>106B3C2A-4952-B3FB-8D3A-79A9BD8DA0E1</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

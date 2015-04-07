@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DF976F86-A10B-2D6C-0E75-7DAA284AE778" name="ARLNL List_List">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DF976F86-A10B-2D6C-0E75-7DAA284AE778" name="ARLNL Sublist">
 <createdBy>Justin</createdBy>
 <createdTime>2015-03-30 23:13:36 UTC</createdTime>
 <ownerDesignName>ARNL_logical</ownerDesignName>
 <engineerTo>
-<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+<item key="E17D0A27-874E-D75A-145E-CF8C78D5F1C0" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -15,27 +15,37 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="LIST SEQ ID" id="46F3D16F-0AAE-802B-870C-CBEF70F54286">
-<createdBy>Justin</createdBy>
-<createdTime>2015-03-30 23:15:01 UTC</createdTime>
-<generatorID>95786F3C-02AF-44B7-CCDA-94C351819713</generatorID>
+<Attribute name="SUBLIST_ID" id="0DD37626-A506-BF4F-0D43-C6736257EB96">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-06 22:58:54 UTC</createdTime>
 <ownerDesignName>ARNL_logical</ownerDesignName>
 <engineerTo>
-<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+<item key="E17D0A27-874E-D75A-145E-CF8C78D5F1C0" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="parent_list_id" id="1DEF7B16-99C6-792D-8D64-F395FCDFA98D">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-06 23:22:58 UTC</createdTime>
+<generatorID>8A505C64-00CC-39AD-1392-2ACA1CFA36C3</generatorID>
+<ownerDesignName>ARNL_logical</ownerDesignName>
+<engineerTo>
+<item key="E17D0A27-874E-D75A-145E-CF8C78D5F1C0" value="true"/>
+</engineerTo>
 <referedAttribute>8AA645DD-9C9A-826A-C76A-A6F65891D471</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 </Attribute>
-<Attribute name="LIST SEQ ID1" id="2497E799-AA09-B9B0-296E-A9198803A700">
-<createdBy>Justin</createdBy>
-<createdTime>2015-03-30 23:15:10 UTC</createdTime>
-<generatorID>D5902C4C-AD8C-25E8-EA6D-50F9D169BB8F</generatorID>
+<Attribute name="child_list_id" id="540E9947-B974-1047-29AF-898A9188FC6A">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-06 23:23:02 UTC</createdTime>
+<generatorID>054FF5C3-3464-FF1C-DAC2-5AFB5A782345</generatorID>
 <ownerDesignName>ARNL_logical</ownerDesignName>
 <engineerTo>
-<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+<item key="E17D0A27-874E-D75A-145E-CF8C78D5F1C0" value="true"/>
 </engineerTo>
 <referedAttribute>8AA645DD-9C9A-826A-C76A-A6F65891D471</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -44,16 +54,17 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="FCAD81FE-3B46-2CD2-1E61-E629F73CEF34" name="ARLNL_User_PK">
-<createdBy>Justin</createdBy>
-<createdTime>2015-03-30 23:13:36 UTC</createdTime>
+<identifier id="75BB3172-BE10-78D2-CAC9-69B70940DC9E" name="ARLNL_Sublist_PK">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-06 22:59:09 UTC</createdTime>
 <ownerDesignName>ARNL_logical</ownerDesignName>
 <engineerTo>
-<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+<item key="E17D0A27-874E-D75A-145E-CF8C78D5F1C0" value="true"/>
 </engineerTo>
 <pk>true</pk>
+<newElementsIDs>0DD37626-A506-BF4F-0D43-C6736257EB96</newElementsIDs>
 <usedAttributes>
-<attributeRef>2497E799-AA09-B9B0-296E-A9198803A700</attributeRef>
+<attributeRef>0DD37626-A506-BF4F-0D43-C6736257EB96</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
