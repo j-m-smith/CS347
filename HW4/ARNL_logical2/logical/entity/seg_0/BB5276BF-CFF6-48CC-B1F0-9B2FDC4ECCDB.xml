@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BB5276BF-CFF6-48CC-B1F0-9B2FDC4ECCDB" name="NL_NotificationList">
+<createdBy>Justin</createdBy>
+<createdTime>2015-03-30 19:18:39 UTC</createdTime>
+<ownerDesignName>ARNL_logical2</ownerDesignName>
+<importedID>D59C58FC-B4F4-58E6-428F-BB7358FB21F0</importedID>
+<engineerTo>
+<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="list_id" id="8AA645DD-9C9A-826A-C76A-A6F65891D471">
+<createdBy>Justin</createdBy>
+<createdTime>2015-03-30 19:18:39 UTC</createdTime>
+<notes>Unique identifier generated from a sequence</notes>
+<ownerDesignName>ARNL_logical2</ownerDesignName>
+<importedID>75B04982-6633-844D-A342-A95200E0D117</importedID>
+<engineerTo>
+<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="list_name" id="B2364424-CDF9-FD17-47DC-12AA106DCDB6">
+<createdBy>Justin</createdBy>
+<createdTime>2015-03-30 19:18:39 UTC</createdTime>
+<comment>required</comment>
+<notes>Unique name for the mailing list - no spaces	allowed.</notes>
+<ownerDesignName>ARNL_logical2</ownerDesignName>
+<importedID>C1DCC66D-251A-3E90-E18B-A5B05918EA15</importedID>
+<engineerTo>
+<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+</Attribute>
+<Attribute name="list_desc" id="34CAD88C-CF3D-0044-5E73-5A56ABA1139B">
+<createdBy>Justin</createdBy>
+<createdTime>2015-03-30 19:18:39 UTC</createdTime>
+<comment>required</comment>
+<notes>Text description for defining the usage of the list</notes>
+<ownerDesignName>ARNL_logical2</ownerDesignName>
+<importedID>41195525-830C-C463-5C05-2F84400397B9</importedID>
+<engineerTo>
+<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3500</dataTypeSize>
+</Attribute>
+<Attribute name="list_ext_view" id="90C6BAB3-73E7-3A0B-9303-579E1A695F38">
+<createdBy>Justin</createdBy>
+<createdTime>2015-03-30 19:18:39 UTC</createdTime>
+<notes>50-character text field to reference an external view name.</notes>
+<ownerDesignName>ARNL_logical2</ownerDesignName>
+<importedID>2265FFA9-42EE-D183-4176-BE0FBFB3B5AD</importedID>
+<engineerTo>
+<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+</Attribute>
+<Attribute name="list_creation" id="55BB08EF-D6EE-0C1E-E600-9749DDA5C3D6">
+<createdBy>Justin</createdBy>
+<createdTime>2015-03-30 19:18:39 UTC</createdTime>
+<ownerDesignName>ARNL_logical2</ownerDesignName>
+<importedID>55800BFD-E879-31C1-D743-46D655BA8625</importedID>
+<engineerTo>
+<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="list_status" id="2C6DEE38-AAC5-E000-0EC5-9AFA9C7A4FC7">
+<createdBy>Justin</createdBy>
+<createdTime>2015-03-30 19:18:39 UTC</createdTime>
+<notes>A for active or I for inactive </notes>
+<ownerDesignName>ARNL_logical2</ownerDesignName>
+<importedID>7407E2C9-DD1D-AA94-61F7-292F3317899A</importedID>
+<engineerTo>
+<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="list_status_eff_date" id="D0D732D5-A024-5606-D024-BBC10B192933">
+<createdBy>Justin</createdBy>
+<createdTime>2015-03-30 19:18:39 UTC</createdTime>
+<ownerDesignName>ARNL_logical2</ownerDesignName>
+<importedID>F1BC3A4B-4A1D-03FD-980D-9D39BC645DEC</importedID>
+<engineerTo>
+<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute name="division_id" id="0DA69F29-CE32-3273-100D-1DA1DAEA9767">
+<createdBy>Justin</createdBy>
+<createdTime>2015-04-21 01:06:39 UTC</createdTime>
+<generatorID>8693F81B-D8D6-24FC-424E-CDAE78877AD3</generatorID>
+<ownerDesignName>ARNL_logical2</ownerDesignName>
+<engineerTo>
+<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>6C1EE6AF-7172-6593-8A1B-605AF5142568</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CB1176AD-DAFE-900F-CC53-7C8C6BD1D143" name="ARLNL_Notification_list_PK">
+<createdBy>Justin</createdBy>
+<createdTime>2015-03-30 19:18:39 UTC</createdTime>
+<ownerDesignName>ARNL_logical2</ownerDesignName>
+<importedID>6BA2C321-B07A-16ED-FE9B-7F9A542C8EB6</importedID>
+<engineerTo>
+<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8AA645DD-9C9A-826A-C76A-A6F65891D471</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

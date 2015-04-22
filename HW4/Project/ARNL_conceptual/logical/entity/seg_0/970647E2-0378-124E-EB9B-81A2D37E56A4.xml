@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="970647E2-0378-124E-EB9B-81A2D37E56A4" name="ARLNL_User">
+<createdBy>Justin</createdBy>
+<createdTime>2015-03-23 21:37:23 UTC</createdTime>
+<ownerDesignName>ARNL_conceptual</ownerDesignName>
+<engineerTo>
+<item key="F9581994-5C9B-0DD8-910E-4D2176C6905F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="EMPLOYEE_ID" id="4E98E3E6-A325-A81F-673E-A4271C1D7772">
+<createdBy>Justin</createdBy>
+<createdTime>2015-03-23 21:38:12 UTC</createdTime>
+<notes>Unique identifier for an employee generated from a sequence.</notes>
+<ownerDesignName>ARNL_conceptual</ownerDesignName>
+<engineerTo>
+<item key="F9581994-5C9B-0DD8-910E-4D2176C6905F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="EMPLOYEE_NAME" id="57DF8C4A-9838-EB70-76AE-07C9A6CC76B5">
+<createdBy>Justin</createdBy>
+<createdTime>2015-03-23 21:45:52 UTC</createdTime>
+<notes>Employee name in the format	&quot;LastName, FirstName MI.&quot;</notes>
+<ownerDesignName>ARNL_conceptual</ownerDesignName>
+<engineerTo>
+<item key="F9581994-5C9B-0DD8-910E-4D2176C6905F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+</Attribute>
+<Attribute name="EMPLOYEE_LAB" id="7A8C7677-E312-87AA-8D38-5D9A0FCCE755">
+<createdBy>Justin</createdBy>
+<createdTime>2015-03-23 22:23:09 UTC</createdTime>
+<notes>4-character lab code identifying which lab the employee is appointed to.</notes>
+<ownerDesignName>ARNL_conceptual</ownerDesignName>
+<engineerTo>
+<item key="F9581994-5C9B-0DD8-910E-4D2176C6905F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+</Attribute>
+<Attribute name="EMPLOYEE_DIVISION" id="679103CC-44E1-F379-A98F-8E89AB4313CE">
+<createdBy>Justin</createdBy>
+<createdTime>2015-03-23 22:24:12 UTC</createdTime>
+<notes>4-character division code identifying which division of a lab	the employee is appointed to.</notes>
+<ownerDesignName>ARNL_conceptual</ownerDesignName>
+<engineerTo>
+<item key="F9581994-5C9B-0DD8-910E-4D2176C6905F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+</Attribute>
+<Attribute name="EMPLOYEE_STATUS" id="0A637D8E-E537-7B4E-707F-4235D23B6E41">
+<createdBy>Justin</createdBy>
+<createdTime>2015-03-23 22:28:47 UTC</createdTime>
+<notes>A for active or I for inactive</notes>
+<ownerDesignName>ARNL_conceptual</ownerDesignName>
+<engineerTo>
+<item key="F9581994-5C9B-0DD8-910E-4D2176C6905F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+</Attribute>
+<Attribute name="STATUS_EFF_DATE" id="DAA5C7C8-6BEB-2777-F4CD-366AD3EED3D3">
+<createdBy>Justin</createdBy>
+<createdTime>2015-03-23 22:30:29 UTC</createdTime>
+<notes>Date the employee_status became effective</notes>
+<ownerDesignName>ARNL_conceptual</ownerDesignName>
+<engineerTo>
+<item key="F9581994-5C9B-0DD8-910E-4D2176C6905F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EF428DF0-3B93-2880-127D-C0EEFB9F2A75" name="{entity} PK">
+<createdBy>Justin</createdBy>
+<createdTime>2015-03-23 21:38:19 UTC</createdTime>
+<ownerDesignName>ARNL_conceptual</ownerDesignName>
+<engineerTo>
+<item key="F9581994-5C9B-0DD8-910E-4D2176C6905F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4E98E3E6-A325-A81F-673E-A4271C1D7772</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

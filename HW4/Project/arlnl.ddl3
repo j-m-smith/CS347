@@ -1,0 +1,168 @@
+DROP SEQUENCE ARLNL_Notification_list_seq ; 
+create sequence ARLNL_Notification_list_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger ARLNL_Notification_lis_PK_trig 
+before insert on ARLNL_Notification_list
+for each row 
+begin 
+select ARLNL_Notification_list_seq.nextval into :new.LIST_SEQ_ID from dual; 
+end; 
+/
+alter table ARLNL_Notification_list add created date ; 
+alter table ARLNL_Notification_list add created_by VARCHAR2 (255) ; 
+alter table ARLNL_Notification_list add row_version_number integer ; 
+alter table ARLNL_Notification_list add updated date ; 
+alter table ARLNL_Notification_list add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger ARLNL_Notification_lis_AUD_trig 
+before insert or update on ARLNL_Notification_list 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE ARLNL_Sublist_seq ; 
+create sequence ARLNL_Sublist_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger ARLNL_Sublist_PK_trig 
+before insert on ARLNL_Sublist
+for each row 
+begin 
+select ARLNL_Sublist_seq.nextval into :new.SUBLIST_ID from dual; 
+end; 
+/
+alter table ARLNL_Sublist add created date ; 
+alter table ARLNL_Sublist add created_by VARCHAR2 (255) ; 
+alter table ARLNL_Sublist add row_version_number integer ; 
+alter table ARLNL_Sublist add updated date ; 
+alter table ARLNL_Sublist add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger ARLNL_Sublist_AUD_trig 
+before insert or update on ARLNL_Sublist 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE ARLNL_User_seq ; 
+create sequence ARLNL_User_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger ARLNL_User_PK_trig 
+before insert on ARLNL_User
+for each row 
+begin 
+select ARLNL_User_seq.nextval into :new.EMPLOYEE_ID from dual; 
+end; 
+/
+alter table ARLNL_User add created date ; 
+alter table ARLNL_User add created_by VARCHAR2 (255) ; 
+alter table ARLNL_User add row_version_number integer ; 
+alter table ARLNL_User add updated date ; 
+alter table ARLNL_User add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger ARLNL_User_AUD_trig 
+before insert or update on ARLNL_User 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE ARLNL_User_List_seq ; 
+create sequence ARLNL_User_List_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger ARLNL_User_List_PK_trig 
+before insert on ARLNL_User_List
+for each row 
+begin 
+select ARLNL_User_List_seq.nextval into :new.user_list_id from dual; 
+end; 
+/
+alter table ARLNL_User_List add created date ; 
+alter table ARLNL_User_List add created_by VARCHAR2 (255) ; 
+alter table ARLNL_User_List add row_version_number integer ; 
+alter table ARLNL_User_List add updated date ; 
+alter table ARLNL_User_List add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger ARLNL_User_List_AUD_trig 
+before insert or update on ARLNL_User_List 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP INDEX EMPLOYEE_ID_FK_0 ;
+CREATE INDEX EMPLOYEE_ID_FK_0 ON ARLNL_User_List(EMPLOYEE_ID) ;
+DROP INDEX LIST_SEQ_ID_FK_1 ;
+CREATE INDEX LIST_SEQ_ID_FK_1 ON ARLNL_User_List(LIST_SEQ_ID) ;
+DROP INDEX parent_list_id_FK_2 ;
+CREATE INDEX parent_list_id_FK_2 ON ARLNL_Sublist(parent_list_id) ;
+DROP INDEX child_list_id_FK_3 ;
+CREATE INDEX child_list_id_FK_3 ON ARLNL_Sublist(child_list_id) ;

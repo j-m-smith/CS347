@@ -1,0 +1,76 @@
+DROP SEQUENCE ARLNL_Notification_list_seq ; 
+create sequence ARLNL_Notification_list_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER ARLNL_Notification_lis_PK_trig 
+; 
+
+create or replace trigger ARLNL_Notification_lis_PK_trig 
+before insert on ARLNL_Notification_list
+for each row 
+begin 
+select ARLNL_Notification_list_seq.nextval into :new.LIST_SEQ_ID from dual; 
+end; 
+/
+
+DROP SEQUENCE ARLNL_Sublist_seq ; 
+create sequence ARLNL_Sublist_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER ARLNL_Sublist_PK_trig 
+; 
+
+create or replace trigger ARLNL_Sublist_PK_trig 
+before insert on ARLNL_Sublist
+for each row 
+begin 
+select ARLNL_Sublist_seq.nextval into :new.SUBLIST_ID from dual; 
+end; 
+/
+
+DROP SEQUENCE ARLNL_User_seq ; 
+create sequence ARLNL_User_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER ARLNL_User_PK_trig 
+; 
+
+create or replace trigger ARLNL_User_PK_trig 
+before insert on ARLNL_User
+for each row 
+begin 
+select ARLNL_User_seq.nextval into :new.EMPLOYEE_ID from dual; 
+end; 
+/
+
+DROP SEQUENCE ARLNL_User_List_seq ; 
+create sequence ARLNL_User_List_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER ARLNL_User_List_PK_trig 
+; 
+
+create or replace trigger ARLNL_User_List_PK_trig 
+before insert on ARLNL_User_List
+for each row 
+begin 
+select ARLNL_User_List_seq.nextval into :new.user_list_id from dual; 
+end; 
+/
+
+DROP INDEX EMPLOYEE_ID_FK_0 ;
+CREATE INDEX EMPLOYEE_ID_FK_0 ON ARLNL_User_List(EMPLOYEE_ID) ;
+DROP INDEX LIST_SEQ_ID_FK_1 ;
+CREATE INDEX LIST_SEQ_ID_FK_1 ON ARLNL_User_List(LIST_SEQ_ID) ;
+DROP INDEX parent_list_id_FK_2 ;
+CREATE INDEX parent_list_id_FK_2 ON ARLNL_Sublist(parent_list_id) ;
+DROP INDEX child_list_id_FK_3 ;
+CREATE INDEX child_list_id_FK_3 ON ARLNL_Sublist(child_list_id) ;
