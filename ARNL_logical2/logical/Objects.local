@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="E49F647E-77DC-4C1C-F773-43981EFAF8E0" name="ARLNL_PROVIDED_Division" seqName="seg_0"/>
+   <object objectType="Entity" objectID="6CBA124F-C842-61E2-B95D-5490695A6D88" name="ARLNL_PROVIDED_Employee" seqName="seg_0"/>
+   <object objectType="Entity" objectID="3E5A4142-3CA2-0AF2-302C-04D8155FFBF9" name="ARLNL_PROVIDED_LAB" seqName="seg_0"/>
+   <object objectType="Entity" objectID="B7A1153C-D9AB-3F48-6C71-8EF59DA80BD1" name="NL_Document" seqName="seg_0"/>
+   <object objectType="Entity" objectID="DF976F86-A10B-2D6C-0E75-7DAA284AE778" name="NL_List_List" seqName="seg_0"/>
+   <object objectType="Entity" objectID="BB5276BF-CFF6-48CC-B1F0-9B2FDC4ECCDB" name="NL_NotificationList" seqName="seg_0"/>
+   <object objectType="Entity" objectID="14C5EDE9-60C7-B02B-5D19-26A76B7C0102" name="NL_User_List" seqName="seg_0"/>
+   <object objectType="Relation" objectID="9EBF6ADA-DFB2-EAE8-F61B-952200BB59D4" name="Division_Employees" seqName="seg_0"/>
+   <object objectType="Relation" objectID="8693F81B-D8D6-24FC-424E-CDAE78877AD3" name="Division_Lists" seqName="seg_0"/>
+   <object objectType="Relation" objectID="E51839AD-5B8D-6274-1B95-D994D357EE7A" name="Employee_Lists" seqName="seg_0"/>
+   <object objectType="Relation" objectID="2290ED23-1F58-AE50-41E9-112CE990CFDF" name="Lab_Divisions" seqName="seg_0"/>
+   <object objectType="Relation" objectID="25FDE21D-EF09-0858-7E73-2007083BE278" name="List_Documents" seqName="seg_0"/>
+   <object objectType="Relation" objectID="45AC6C38-9DD0-637C-194F-A9723B9624F3" name="List_Employees" seqName="seg_0"/>
+   <object objectType="Relation" objectID="95786F3C-02AF-44B7-CCDA-94C351819713" name="List_Lists" seqName="seg_0"/>
+   <object objectType="Relation" objectID="D5902C4C-AD8C-25E8-EA6D-50F9D169BB8F" name="List_Listsv2" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>
