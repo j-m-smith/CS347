@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F484F3F1-18B4-258D-6D4A-532F8B9977CD" name="NL_User_List">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>14C5EDE9-60C7-B02B-5D19-26A76B7C0102</generatorID>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NL_NotificationList_list_id" id="2EEADAAF-F052-3E74-BD66-A295F8DE9209">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>CEDC061C-FCEE-6EB3-32C6-132ECAAF8FDA</generatorID>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>35F3711E-430F-FF30-355B-184CC3E274E2</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7A620C4D-E17A-23E9-DA09-79AFB052A1F3" referredColumn="35F3711E-430F-FF30-355B-184CC3E274E2"/>
+</associations>
+</Column>
+<Column name="ARL_Employee_emp_id" id="FF79739A-8064-C792-BA69-8CB5AF5D4830">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>C085DE88-2CA8-CFCC-5424-424E37E82F8D</generatorID>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>0898E9FA-38AF-C929-6B20-4D13F9365EB8</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6EE22B20-8774-E2CA-324D-CE212240E03F" referredColumn="0898E9FA-38AF-C929-6B20-4D13F9365EB8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="96E338CD-4D40-AC7C-4EA2-0463284EEC3C" name="NL_User_List_PK">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>C1F54DF5-CF6B-0C01-87AC-5C08758488E2</generatorID>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF79739A-8064-C792-BA69-8CB5AF5D4830"/>
+<colUsage columnID="2EEADAAF-F052-3E74-BD66-A295F8DE9209"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C0E99594-A3FB-CBF7-D9C2-98BC8841F93C" name="NL_User_List_ARL_Employee_FK">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>E51839AD-5B8D-6274-1B95-D994D357EE7A</generatorID>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FF79739A-8064-C792-BA69-8CB5AF5D4830"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="55FC0F1B-EEC0-2BF6-65FF-3AF498FFE6BC" name="NL_User_List_NL_NotificationList_FK">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>45AC6C38-9DD0-637C-194F-A9723B9624F3</generatorID>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2EEADAAF-F052-3E74-BD66-A295F8DE9209"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

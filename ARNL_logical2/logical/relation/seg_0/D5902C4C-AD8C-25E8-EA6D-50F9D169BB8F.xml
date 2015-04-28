@@ -4,13 +4,13 @@
 <createdTime>2015-03-30 23:15:10 UTC</createdTime>
 <ownerDesignName>ARNL_logical2</ownerDesignName>
 <engineerTo>
-<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+<item key="5277D76B-A724-E3DC-E6D6-8F3A5E8ECB68" value="true"/>
 </engineerTo>
 <sourcePk>CB1176AD-DAFE-900F-CC53-7C8C6BD1D143</sourcePk>
 <targetPk>FCAD81FE-3B46-2CD2-1E61-E629F73CEF34</targetPk>
-<identifying>false</identifying>
+<identifying>true</identifying>
 <optionalSource>true</optionalSource>
-<optionalTarget>true</optionalTarget>
+<optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>BB5276BF-CFF6-48CC-B1F0-9B2FDC4ECCDB</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>

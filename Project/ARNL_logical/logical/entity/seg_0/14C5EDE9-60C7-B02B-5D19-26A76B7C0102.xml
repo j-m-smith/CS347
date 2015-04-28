@@ -3,9 +3,6 @@
 <createdBy>Justin</createdBy>
 <createdTime>2015-03-30 23:10:17 UTC</createdTime>
 <ownerDesignName>ARNL_logical</ownerDesignName>
-<engineerTo>
-<item key="E17D0A27-874E-D75A-145E-CF8C78D5F1C0" value="true"/>
-</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -19,9 +16,6 @@
 <createdBy>matt</createdBy>
 <createdTime>2015-04-06 23:25:06 UTC</createdTime>
 <ownerDesignName>ARNL_logical</ownerDesignName>
-<engineerTo>
-<item key="E17D0A27-874E-D75A-145E-CF8C78D5F1C0" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -31,9 +25,6 @@
 <createdTime>2015-04-06 23:28:03 UTC</createdTime>
 <generatorID>05686B41-01B0-6598-1722-EE71B53DDF45</generatorID>
 <ownerDesignName>ARNL_logical</ownerDesignName>
-<engineerTo>
-<item key="E17D0A27-874E-D75A-145E-CF8C78D5F1C0" value="true"/>
-</engineerTo>
 <referedAttribute>8AA645DD-9C9A-826A-C76A-A6F65891D471</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -44,9 +35,6 @@
 <createdTime>2015-04-06 23:28:09 UTC</createdTime>
 <generatorID>463A8F90-415F-0D85-83B0-054A92CF5085</generatorID>
 <ownerDesignName>ARNL_logical</ownerDesignName>
-<engineerTo>
-<item key="E17D0A27-874E-D75A-145E-CF8C78D5F1C0" value="true"/>
-</engineerTo>
 <referedAttribute>3C52F3ED-4218-4753-7CBF-6248FEF15562</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -58,9 +46,6 @@
 <createdBy>Justin</createdBy>
 <createdTime>2015-03-30 23:10:17 UTC</createdTime>
 <ownerDesignName>ARNL_logical</ownerDesignName>
-<engineerTo>
-<item key="E17D0A27-874E-D75A-145E-CF8C78D5F1C0" value="true"/>
-</engineerTo>
 <pk>true</pk>
 <newElementsIDs>106B3C2A-4952-B3FB-8D3A-79A9BD8DA0E1</newElementsIDs>
 <usedAttributes>

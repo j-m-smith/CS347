@@ -4,9 +4,6 @@
 <createdTime>2015-03-30 19:18:39 UTC</createdTime>
 <ownerDesignName>ARNL_logical</ownerDesignName>
 <importedID>D59C58FC-B4F4-58E6-428F-BB7358FB21F0</importedID>
-<engineerTo>
-<item key="4849307C-CDE1-0F4F-67E4-C15A8E53D2D7" value="true"/>
-</engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
@@ -22,9 +19,6 @@
 <notes>Unique identifier generated from a sequence</notes>
 <ownerDesignName>ARNL_logical</ownerDesignName>
 <importedID>75B04982-6633-844D-A342-A95200E0D117</importedID>
-<engineerTo>
-<item key="4849307C-CDE1-0F4F-67E4-C15A8E53D2D7" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -36,9 +30,6 @@
 <notes>Unique name for the mailing list - no spaces	allowed.</notes>
 <ownerDesignName>ARNL_logical</ownerDesignName>
 <importedID>C1DCC66D-251A-3E90-E18B-A5B05918EA15</importedID>
-<engineerTo>
-<item key="4849307C-CDE1-0F4F-67E4-C15A8E53D2D7" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -51,9 +42,6 @@
 <notes>4-character division code&lt;br/&gt;&lt;br/&gt;- default to the user’s division&lt;br/&gt;but the user should be able to override that and identify a different	division code for ownership.</notes>
 <ownerDesignName>ARNL_logical</ownerDesignName>
 <importedID>07DFB5BC-C007-1B43-4E96-6D6DC9389E59</importedID>
-<engineerTo>
-<item key="4849307C-CDE1-0F4F-67E4-C15A8E53D2D7" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -67,9 +55,6 @@
 <notes>Text description for defining the usage of the list</notes>
 <ownerDesignName>ARNL_logical</ownerDesignName>
 <importedID>41195525-830C-C463-5C05-2F84400397B9</importedID>
-<engineerTo>
-<item key="4849307C-CDE1-0F4F-67E4-C15A8E53D2D7" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -82,9 +67,6 @@
 <notes>50-character text field to reference an external view name.</notes>
 <ownerDesignName>ARNL_logical</ownerDesignName>
 <importedID>2265FFA9-42EE-D183-4176-BE0FBFB3B5AD</importedID>
-<engineerTo>
-<item key="4849307C-CDE1-0F4F-67E4-C15A8E53D2D7" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -96,9 +78,6 @@
 <createdTime>2015-03-30 19:18:39 UTC</createdTime>
 <ownerDesignName>ARNL_logical</ownerDesignName>
 <importedID>55800BFD-E879-31C1-D743-46D655BA8625</importedID>
-<engineerTo>
-<item key="4849307C-CDE1-0F4F-67E4-C15A8E53D2D7" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -110,9 +89,6 @@
 <notes>A for active or I for inactive </notes>
 <ownerDesignName>ARNL_logical</ownerDesignName>
 <importedID>7407E2C9-DD1D-AA94-61F7-292F3317899A</importedID>
-<engineerTo>
-<item key="4849307C-CDE1-0F4F-67E4-C15A8E53D2D7" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -124,9 +100,6 @@
 <createdTime>2015-03-30 19:18:39 UTC</createdTime>
 <ownerDesignName>ARNL_logical</ownerDesignName>
 <importedID>F1BC3A4B-4A1D-03FD-980D-9D39BC645DEC</importedID>
-<engineerTo>
-<item key="4849307C-CDE1-0F4F-67E4-C15A8E53D2D7" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -139,9 +112,6 @@
 <createdTime>2015-03-30 19:18:39 UTC</createdTime>
 <ownerDesignName>ARNL_logical</ownerDesignName>
 <importedID>6BA2C321-B07A-16ED-FE9B-7F9A542C8EB6</importedID>
-<engineerTo>
-<item key="4849307C-CDE1-0F4F-67E4-C15A8E53D2D7" value="true"/>
-</engineerTo>
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>8AA645DD-9C9A-826A-C76A-A6F65891D471</attributeRef>

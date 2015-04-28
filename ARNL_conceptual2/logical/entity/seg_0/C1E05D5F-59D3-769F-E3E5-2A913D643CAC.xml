@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C1E05D5F-59D3-769F-E3E5-2A913D643CAC" name="ARL_Admin">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-28 06:53:01 UTC</createdTime>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<engineerTo>
+<item key="5277D76B-A724-E3DC-E6D6-8F3A5E8ECB68" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>6CBA124F-C842-61E2-B95D-5490695A6D88</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+</Entity>

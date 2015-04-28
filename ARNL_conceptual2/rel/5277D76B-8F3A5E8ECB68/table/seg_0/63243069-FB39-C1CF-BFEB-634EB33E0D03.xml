@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="63243069-FB39-C1CF-BFEB-634EB33E0D03" name="ARL_Employee">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>6CBA124F-C842-61E2-B95D-5490695A6D88</generatorID>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EMPLOYEE_ID" id="66C8CC3E-A004-9801-4D90-0472D06A3798">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>3C52F3ED-4218-4753-7CBF-6248FEF15562</generatorID>
+<notes>Unique identifier for an employee generated from a sequence.</notes>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMPLOYEE_NAME" id="A6CD0503-5860-9F0F-13E7-F12B2330A955">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>2BCCEFB5-0DA7-902F-4D29-AE4DA9D88261</generatorID>
+<notes>Employee name in the format	&quot;LastName, FirstName MI.&quot;</notes>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMPLOYEE_STATUS" id="3D4BB0A5-FECE-AAD2-55A7-B9F36CF327E9">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>A719585E-36F2-665B-7BBB-94307EA2CB1C</generatorID>
+<notes>A for active or I for inactive</notes>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS_EFF_DATE" id="62DBDC8D-AB9A-6B08-20D8-2A68950B5DCD">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>9F4F46E7-25A3-6C02-BED8-2F6B91B93CDB</generatorID>
+<notes>Date the employee_status became effective</notes>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ARL_Division_div_id" id="4DA6A2F9-101A-C5D5-E1C6-543E99AF68B4">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>78E8C22E-B2D9-6919-631B-3583B42E5332</generatorID>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>95E72F8B-75CF-90D5-8128-9F26143510F4</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="61B6238C-6066-2BC8-2265-4AA6DDFEBA04" referredColumn="95E72F8B-75CF-90D5-8128-9F26143510F4"/>
+</associations>
+</Column>
+<Column name="emp_id" id="0898E9FA-38AF-C929-6B20-4D13F9365EB8">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>EEDE2C94-6C0E-F0CD-3141-F716151482E7</generatorID>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="role_type" id="9831C80D-EDD1-581F-345E-91F8BFD21C15">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>F560A563-39C6-3C46-7258-07C38228FFBF</generatorID>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="APEX_ID" id="A2BA331D-0D43-F2C7-3EB4-F707820F0593">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 06:45:28 UTC</createdTime>
+<generatorID>BB27F954-0230-25D9-4466-2C163F935645</generatorID>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2532C6DC-512B-3211-C471-868B314A9671" name="ARL_Employee_PK">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>E2CB4A56-F337-396C-C8D5-830DC4EAFE3B</generatorID>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0898E9FA-38AF-C929-6B20-4D13F9365EB8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D67EFEB3-1A63-9D42-2A0E-E77EF5FB7E64" name="ARL_Employee_ARL_Division_FK">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>9EBF6ADA-DFB2-EAE8-F61B-952200BB59D4</generatorID>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4DA6A2F9-101A-C5D5-E1C6-543E99AF68B4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

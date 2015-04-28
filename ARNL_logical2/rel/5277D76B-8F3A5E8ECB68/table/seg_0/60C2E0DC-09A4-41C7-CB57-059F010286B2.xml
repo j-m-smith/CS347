@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="60C2E0DC-09A4-41C7-CB57-059F010286B2" name="ARL_LAB">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>3E5A4142-3CA2-0AF2-302C-04D8155FFBF9</generatorID>
+<ownerDesignName>ARNL_logical2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LAB_CODE" id="C7C914EA-15F3-4BAD-8F4F-2F03A9330466">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>AD1F4BE3-FB45-325F-8D14-348B7AD457B7</generatorID>
+<ownerDesignName>ARNL_logical2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lab_id" id="0B6C282B-DD79-2F86-15FE-7BA6F52E4C61">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>4D202A81-4D9E-5DD6-C241-AAF66AF79227</generatorID>
+<ownerDesignName>ARNL_logical2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BF058594-6659-CCFE-DACA-D224DB9125AB" name="ARL_LAB_PK">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>D9B7143F-7FCC-754F-F8B3-45DAC5CFACE7</generatorID>
+<ownerDesignName>ARNL_logical2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B6C282B-DD79-2F86-15FE-7BA6F52E4C61"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

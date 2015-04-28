@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8BECD047-3231-E5DF-2DDE-E452413E597D" name="NL_NotificationList">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>BB5276BF-CFF6-48CC-B1F0-9B2FDC4ECCDB</generatorID>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="list_id" id="35F3711E-430F-FF30-355B-184CC3E274E2">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>8AA645DD-9C9A-826A-C76A-A6F65891D471</generatorID>
+<notes>Unique identifier generated from a sequence</notes>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="list_name" id="72EFECE9-1AC4-332C-BA81-FDE3224564F5">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<comment>required</comment>
+<generatorID>B2364424-CDF9-FD17-47DC-12AA106DCDB6</generatorID>
+<notes>Unique name for the mailing list - no spaces	allowed.</notes>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="list_desc" id="2E539FB6-896F-D8B5-9AA5-31AE5FE2A903">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<comment>required</comment>
+<generatorID>34CAD88C-CF3D-0044-5E73-5A56ABA1139B</generatorID>
+<notes>Text description for defining the usage of the list</notes>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3500</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="list_ext_view" id="B933B548-7CDC-F8DA-A942-F5A77B20218E">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>90C6BAB3-73E7-3A0B-9303-579E1A695F38</generatorID>
+<notes>50-character text field to reference an external view name.</notes>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="list_creation" id="68ADE6C9-B119-DD41-3BC3-29B4848FE475">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>55BB08EF-D6EE-0C1E-E600-9749DDA5C3D6</generatorID>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="list_status" id="12BEE596-3810-5E4C-A771-2709D085FE07">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>2C6DEE38-AAC5-E000-0EC5-9AFA9C7A4FC7</generatorID>
+<notes>A for active or I for inactive </notes>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="list_status_eff_date" id="4FEBB904-B617-A98A-0572-CB585DF1E02C">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>D0D732D5-A024-5606-D024-BBC10B192933</generatorID>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ARL_Division_div_id" id="14889CE9-F8DA-73A2-DD80-4427EA6E7FD3">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>0DA69F29-CE32-3273-100D-1DA1DAEA9767</generatorID>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>95E72F8B-75CF-90D5-8128-9F26143510F4</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="862E1252-3E22-212C-E659-B5974F365EB6" referredColumn="95E72F8B-75CF-90D5-8128-9F26143510F4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A2FE06AE-BBE4-39D4-FAB7-36B636B6C035" name="NL_NotificationList_PK">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>CB1176AD-DAFE-900F-CC53-7C8C6BD1D143</generatorID>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="35F3711E-430F-FF30-355B-184CC3E274E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B933EBA3-10F8-F395-90AC-BCA685C576B3" name="NL_NotificationList_ARL_Division_FK">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>8693F81B-D8D6-24FC-424E-CDAE78877AD3</generatorID>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="14889CE9-F8DA-73A2-DD80-4427EA6E7FD3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

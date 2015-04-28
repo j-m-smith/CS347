@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="8BECD047-3231-E5DF-2DDE-E452413E597D" name="NL_NotificationList" seqName="seg_0"/>
+   <object objectType="Table" objectID="D421A480-8278-96A8-5744-E785E87FA515" name="ARL_Division" seqName="seg_0"/>
+   <object objectType="Table" objectID="63FFF614-A80F-1804-493C-F9BE9B42B57A" name="NL_List_List" seqName="seg_0"/>
+   <object objectType="Table" objectID="BC97D298-98BD-67B9-EF7D-BDAA6B4EDCFC" name="NL_Document" seqName="seg_0"/>
+   <object objectType="Table" objectID="63243069-FB39-C1CF-BFEB-634EB33E0D03" name="ARL_Employee" seqName="seg_0"/>
+   <object objectType="Table" objectID="60C2E0DC-09A4-41C7-CB57-059F010286B2" name="ARL_LAB" seqName="seg_0"/>
+   <object objectType="Table" objectID="0FBE91E1-70B7-F419-654D-0B6A7FC11AEA" name="List_Documents" seqName="seg_0"/>
+   <object objectType="Table" objectID="F484F3F1-18B4-258D-6D4A-532F8B9977CD" name="NL_User_List" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="61B6238C-6066-2BC8-2265-4AA6DDFEBA04" name="ARL_Employee_ARL_Division_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="862E1252-3E22-212C-E659-B5974F365EB6" name="NL_NotificationList_ARL_Division_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="C6176189-25BD-658C-EA9E-D35D385DC020" name="FK_ASS_6" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="25F333F1-B89D-BEAE-CB08-F6FE8AE2BFCD" name="NL_List_List_NL_NotificationList_FKv1" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="D6B01FA2-A074-C07C-6705-8E455FF3782A" name="FK_ASS_5" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="A1D5FB4D-19F7-14FE-3539-FDF11CF4A0E8" name="NL_List_List_NL_NotificationList_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="DF391210-684D-81A9-419D-82B7BF282D48" name="ARL_Division_ARL_LAB_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="7A620C4D-E17A-23E9-DA09-79AFB052A1F3" name="NL_User_List_NL_NotificationList_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="6EE22B20-8774-E2CA-324D-CE212240E03F" name="NL_User_List_ARL_Employee_FK" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

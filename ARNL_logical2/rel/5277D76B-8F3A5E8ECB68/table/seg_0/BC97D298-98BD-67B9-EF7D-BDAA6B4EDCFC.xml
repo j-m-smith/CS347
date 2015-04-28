@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BC97D298-98BD-67B9-EF7D-BDAA6B4EDCFC" name="NL_Document">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>B7A1153C-D9AB-3F48-6C71-8EF59DA80BD1</generatorID>
+<ownerDesignName>ARNL_logical2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="file_id" id="BE4F59AC-500E-71CF-A704-CF937085AD9F">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>2DA97D10-D4F4-2EF9-1CC2-F28048872EE6</generatorID>
+<ownerDesignName>ARNL_logical2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="file_name" id="11401C9F-E921-F15F-DD18-C6AD4B4DCD68">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>BA3B3063-D29A-7594-D1C4-BA6AAD64CEE6</generatorID>
+<ownerDesignName>ARNL_logical2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="file_mimetype" id="6C143D5F-BCC9-CF11-D882-3925FDC62984">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>EC550010-AE66-3E26-622C-AC4BB194B715</generatorID>
+<ownerDesignName>ARNL_logical2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="file_charset" id="41F96668-0F7C-A627-DAAF-D7DEE1504FB0">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>3DC931AB-ABDE-51D3-BB27-7F53F6C07F4F</generatorID>
+<ownerDesignName>ARNL_logical2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>512</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="file_data" id="BAD487A5-B92D-995C-CB0B-2CB6B4A9943E">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>09C94A5B-618C-25BB-A46E-DE9DB732A63D</generatorID>
+<ownerDesignName>ARNL_logical2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="file_comments" id="3156A4AF-4771-EE83-C74B-56941F96D7EA">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>1FA29691-3070-DBC7-3ABC-6BAD11E007C0</generatorID>
+<ownerDesignName>ARNL_logical2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tags" id="F555C16C-601C-B58B-4CBA-6A6D1C276A7D">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>59A1DCF0-3B87-2DA5-DF7C-F9D0339A55C7</generatorID>
+<ownerDesignName>ARNL_logical2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CC7A5162-475A-74E6-30D1-A0B7DBC2C6C6" name="NL_Document_PK">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>71B0353F-F05A-EAC8-1CB0-57901084D28A</generatorID>
+<ownerDesignName>ARNL_logical2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BE4F59AC-500E-71CF-A704-CF937085AD9F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

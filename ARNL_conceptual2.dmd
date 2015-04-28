@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="ARNL_conceptual2" id="98740A66-D35E-33D8-EB7D-2234EDF0A863" version="3.5">
+<createdBy>Justin</createdBy>
+<createdTime>2015-03-30 19:15:39 UTC</createdTime>
+<ownerDesignName>ARNL_logical</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>98740A66-D35E-33D8-EB7D-2234EDF0A863</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="79457372-E225-2802-1576-A8528333222E">
+<designStoragePath>/Users/Justin/Desktop/ARNL_conceptual</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

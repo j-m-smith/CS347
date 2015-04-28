@@ -1,11 +1,11 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6CBA124F-C842-61E2-B95D-5490695A6D88" name="ARLNL_PROVIDED_Employee">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6CBA124F-C842-61E2-B95D-5490695A6D88" name="ARL_Employee">
 <createdBy>Justin</createdBy>
 <createdTime>2015-03-30 19:18:39 UTC</createdTime>
 <ownerDesignName>ARNL_logical2</ownerDesignName>
 <importedID>970647E2-0378-124E-EB9B-81A2D37E56A4</importedID>
 <engineerTo>
-<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+<item key="5277D76B-A724-E3DC-E6D6-8F3A5E8ECB68" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -23,7 +23,7 @@
 <ownerDesignName>ARNL_logical2</ownerDesignName>
 <importedID>4E98E3E6-A325-A81F-673E-A4271C1D7772</importedID>
 <engineerTo>
-<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+<item key="5277D76B-A724-E3DC-E6D6-8F3A5E8ECB68" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -36,7 +36,7 @@
 <ownerDesignName>ARNL_logical2</ownerDesignName>
 <importedID>57DF8C4A-9838-EB70-76AE-07C9A6CC76B5</importedID>
 <engineerTo>
-<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+<item key="5277D76B-A724-E3DC-E6D6-8F3A5E8ECB68" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -51,7 +51,7 @@
 <ownerDesignName>ARNL_logical2</ownerDesignName>
 <importedID>0A637D8E-E537-7B4E-707F-4235D23B6E41</importedID>
 <engineerTo>
-<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+<item key="5277D76B-A724-E3DC-E6D6-8F3A5E8ECB68" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -66,20 +66,20 @@
 <ownerDesignName>ARNL_logical2</ownerDesignName>
 <importedID>DAA5C7C8-6BEB-2777-F4CD-366AD3EED3D3</importedID>
 <engineerTo>
-<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+<item key="5277D76B-A724-E3DC-E6D6-8F3A5E8ECB68" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
 </Attribute>
-<Attribute name="division_id" id="78E8C22E-B2D9-6919-631B-3583B42E5332">
+<Attribute name="div_id" id="78E8C22E-B2D9-6919-631B-3583B42E5332">
 <createdBy>Justin</createdBy>
 <createdTime>2015-04-21 01:06:39 UTC</createdTime>
 <generatorID>9EBF6ADA-DFB2-EAE8-F61B-952200BB59D4</generatorID>
 <ownerDesignName>ARNL_logical2</ownerDesignName>
 <engineerTo>
-<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+<item key="5277D76B-A724-E3DC-E6D6-8F3A5E8ECB68" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>6C1EE6AF-7172-6593-8A1B-605AF5142568</referedAttribute>
@@ -92,7 +92,7 @@
 <createdTime>2015-04-21 01:07:29 UTC</createdTime>
 <ownerDesignName>ARNL_logical2</ownerDesignName>
 <engineerTo>
-<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+<item key="5277D76B-A724-E3DC-E6D6-8F3A5E8ECB68" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -103,13 +103,25 @@
 <createdTime>2015-04-21 01:26:07 UTC</createdTime>
 <ownerDesignName>ARNL_logical2</ownerDesignName>
 <engineerTo>
-<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+<item key="5277D76B-A724-E3DC-E6D6-8F3A5E8ECB68" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="apex_id" id="ECD6F377-A1E5-F833-81A5-7139C9B2B2E7">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-28 06:49:43 UTC</createdTime>
+<ownerDesignName>ARNL_logical2</ownerDesignName>
+<engineerTo>
+<item key="5277D76B-A724-E3DC-E6D6-8F3A5E8ECB68" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -119,7 +131,7 @@
 <ownerDesignName>ARNL_logical2</ownerDesignName>
 <importedID>EF428DF0-3B93-2880-127D-C0EEFB9F2A75</importedID>
 <engineerTo>
-<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+<item key="5277D76B-A724-E3DC-E6D6-8F3A5E8ECB68" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

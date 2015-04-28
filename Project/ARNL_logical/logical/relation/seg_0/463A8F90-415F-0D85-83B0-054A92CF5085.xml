@@ -3,9 +3,6 @@
 <createdBy>matt</createdBy>
 <createdTime>2015-04-06 23:13:26 UTC</createdTime>
 <ownerDesignName>ARNL_logical</ownerDesignName>
-<engineerTo>
-<item key="4849307C-CDE1-0F4F-67E4-C15A8E53D2D7" value="true"/>
-</engineerTo>
 <sourcePk>E2CB4A56-F337-396C-C8D5-830DC4EAFE3B</sourcePk>
 <identifying>false</identifying>
 <optionalSource>true</optionalSource>

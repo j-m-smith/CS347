@@ -1,10 +1,10 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="14C5EDE9-60C7-B02B-5D19-26A76B7C0102" name="NL_User_List">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="14C5EDE9-60C7-B02B-5D19-26A76B7C0102" name="NL_Membership">
 <createdBy>Justin</createdBy>
 <createdTime>2015-03-30 23:10:17 UTC</createdTime>
 <ownerDesignName>ARNL_logical2</ownerDesignName>
 <engineerTo>
-<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+<item key="5277D76B-A724-E3DC-E6D6-8F3A5E8ECB68" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -21,7 +21,7 @@
 <generatorID>45AC6C38-9DD0-637C-194F-A9723B9624F3</generatorID>
 <ownerDesignName>ARNL_logical2</ownerDesignName>
 <engineerTo>
-<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+<item key="5277D76B-A724-E3DC-E6D6-8F3A5E8ECB68" value="true"/>
 </engineerTo>
 <referedAttribute>8AA645DD-9C9A-826A-C76A-A6F65891D471</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -34,7 +34,7 @@
 <generatorID>E51839AD-5B8D-6274-1B95-D994D357EE7A</generatorID>
 <ownerDesignName>ARNL_logical2</ownerDesignName>
 <engineerTo>
-<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+<item key="5277D76B-A724-E3DC-E6D6-8F3A5E8ECB68" value="true"/>
 </engineerTo>
 <referedAttribute>EEDE2C94-6C0E-F0CD-3141-F716151482E7</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -48,7 +48,7 @@
 <createdTime>2015-03-30 23:10:17 UTC</createdTime>
 <ownerDesignName>ARNL_logical2</ownerDesignName>
 <engineerTo>
-<item key="C5FE2C64-A36C-FE72-5035-9BC6FD1868BA" value="true"/>
+<item key="5277D76B-A724-E3DC-E6D6-8F3A5E8ECB68" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <newElementsIDs>E51839AD-5B8D-6274-1B95-D994D357EE7A,45AC6C38-9DD0-637C-194F-A9723B9624F3</newElementsIDs>

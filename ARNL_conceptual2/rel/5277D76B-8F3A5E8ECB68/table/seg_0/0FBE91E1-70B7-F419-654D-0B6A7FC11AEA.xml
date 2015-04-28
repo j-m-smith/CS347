@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0FBE91E1-70B7-F419-654D-0B6A7FC11AEA" name="List_Documents">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NL_NotificationList_list_id" id="71C29576-8588-4605-0BE9-4D472BC8924A">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>35F3711E-430F-FF30-355B-184CC3E274E2</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D6B01FA2-A074-C07C-6705-8E455FF3782A" referredColumn="35F3711E-430F-FF30-355B-184CC3E274E2"/>
+</associations>
+</Column>
+<Column name="NL_Document_document_id" id="269EFC3E-DFFF-CCC7-EDF4-4B4C49D4A617">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>BE4F59AC-500E-71CF-A704-CF937085AD9F</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C6176189-25BD-658C-EA9E-D35D385DC020" referredColumn="BE4F59AC-500E-71CF-A704-CF937085AD9F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7FD73AE0-2625-8B51-FC51-9C9766F609C1" name="List_Documents_PK">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71C29576-8588-4605-0BE9-4D472BC8924A"/>
+<colUsage columnID="269EFC3E-DFFF-CCC7-EDF4-4B4C49D4A617"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8E9B6585-3FE1-16FF-4511-1612CCEC5FA3" name="FK_ASS_5">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>25FDE21D-EF09-0858-7E73-2007083BE278</generatorID>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="71C29576-8588-4605-0BE9-4D472BC8924A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AE8CC201-8B8A-EB8D-19E6-A658CE985520" name="FK_ASS_6">
+<createdBy>matt</createdBy>
+<createdTime>2015-04-27 05:29:08 UTC</createdTime>
+<generatorID>25FDE21D-EF09-0858-7E73-2007083BE278</generatorID>
+<ownerDesignName>ARNL_conceptual2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="269EFC3E-DFFF-CCC7-EDF4-4B4C49D4A617"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
